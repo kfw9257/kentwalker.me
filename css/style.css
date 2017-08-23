@@ -2,7 +2,7 @@
   position: relative;
   background-color: #FFC273;
   width: 100%;
-  height: 12.3em;
+  height: 10%;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 
 
 #sitelogo {
-  padding-top: 29px;
+  padding-top: 2.5%;
   /*
   padding-right: 10px;
   width: 400px;*/
