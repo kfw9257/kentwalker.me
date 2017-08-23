@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="referrer" content="origin">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="referrer" content="origin">
+      <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container-fluid">
       <div id="banner">
-        <div id="sitelogo">
-          <img src="images/sitelogo3.jpg">
+        <div id="sitelogo" class="text-center">
+          <img src="images/sitelogo6.jpg">
         </div>
       </div>
       <nav>
@@ -23,79 +23,89 @@
         </ul>
         <!-- <a href="#" id="pull">MENU</a> -->
       </nav>
-      <div id="work">
-        <div class="text-center">
+      <div id="work" class="text-center">
             <h1>WORK</h1>
           </div>
-        <div id="shortcuts">
-          <div class="row row1">
-            <div class="col-md-2 offset-md-2">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/simon.jpg" class="img-responsive" style="width:215px;height:150px;"></a>
+      <div id="allContent">
+        <div id="shortcuts" class="text-center">
+            <!-- <div class="row row1"> -->
+            <div class="row text-center">
+
+              <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="image-link">
+                    <a href="#" class="workItem">
+                      <img class="img-fluid" src="images/simon.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                  <div class="image-link">
+                    <a href="#" class="workItem">
+                      <img class="img-fluid" src="images/calculator.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                  <div class="image-link">
+                      <a href="#" class="workItem">
+                        <img class="img-fluid" src="images/tictactoe.jpg" alt="">
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                  <div class="image-link">
+                      <a href="#" class="workItem">
+                        <img class="img-fluid" src="images/pomodorro.jpg" alt="">
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                  <div class="image-link">
+                      <a href="#" class="workItem">
+                        <img class="img-fluid" src="images/wikipedia.jpg" alt="">
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                  <div class="image-link">
+                      <a href="#" class="workItem">
+                        <img class="img-fluid" src="images/twitch.jpg" alt="">
+                      </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-2 offset-md-1">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/calculator.jpg" class="img-responsive" style="width:215px;height:150px;margin-right:20px;"></a>
+        <div id="test4" class="text-center">
+          <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 test2">
+              <div id="about">
+                <div class="text-center"><h2>ABOUT ME</h2></div>
+                  <div id="innerContent">
+                <!-- <h2>ABOUT ME</h2> -->
+                    <div id="myPicture"><img src="images/about.jpg"></div>
+                      <!-- <div id="aboutmetxt"> -->
+                      <div id="aboutText">
+                        <p class="text-center">Hi I'm Kent!</p>
+                        <br>
+                        <br>
+                        <p>I'm a Front-End  Web Developer living in Syracuse, NY who likes to design sites that have responsive, minimalist designs and are easy to navigate.<br><br>
+                        I'm currently studying towards becoming a Full Stack Developer so that I can work on all aspects of developing web solutions for organizations.<br>
+                        I'm looking for both freelance and full time job opportunities.</p>
+                       </div>
+                    </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-2 offset-md-1">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/tictactoe.jpg" class="img-responsive" style="width:215px;height:150px;"></a>
-            </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 offset-md-2">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/pomodorro.jpg" class="img-responsive" style="width:215px;height:150px;"></a>
-              </div>
-            </div>
-            <div class="col-md-2 offset-md-1">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/wikipedia.jpg" class="img-responsive" style="width:215px;height:150px;margin-right:20px;"></a>
-              </div>
-            </div>
-            <div class="col-md-2 offset-md-1">
-              <div class="image-link">
-                <a href="#" class="work"><img class="img-responsive" src="images/twitch.jpg" class="img-responsive" style="width:215px;height:150px;"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-      <div class="row">
-          <div class="col-md-4 offset-md-1">
-            <div id="about">
-              <div class="text-center"><h2>ABOUT ME</h2></div>
-              <!-- <h2>ABOUT ME</h2> -->
-                  <!-- <div id="aboutimg"><img src="images/about.jpg"></div> -->
-                  <img src="images/about.jpg">
-                  <!-- <div id="aboutmetxt"> -->
-                    <p class="text-center">Hi I'm Kent!</p>
-                    <p>I'm a Front-End  Web Developer living in Syracuse, NY. I like to design sites that have responsive, minimalist designs and are easy to navigate.</p>
-                    <p>I'm currently studying towards becoming a Full Stack Developer so that I can work on all aspects of developing web solutions for organizations.</p>
-                    <p>I'm looking for both freelance and full time job opportunities.</p>
-                  <!-- </div> -->
-              </div>
-            </div>
-              <div class="col-md-4 offset-md-1">
-                <div id="skills" class="text-center">
-                  <h2>SKILLS</h2>
-                      <div class="row skillrow1">
-                        <div class="col-md-1"><img src="images/HTML_Logo.png" style="width: 85px; height: 85px;"></div>
-                        <div class="col-md-1"><img src="images/javascript1.png" style="width: 85px; height: 85px;"></div>
-                        <div class="col-md-1"><img src="images/css3.png" style="width: 85px; height: 85px;"></div>
-                        <div class="col-md-1"><img src="images/bootstrap-logo.png" style="width: 85px; height: 85px;"></div>
-                      </div>
-                      <div class="row skillrow2">
-                        <div class="col-md-2" id="gitImg"><img src="images/git.png" style="width:120px; height: 55px;"></div>
-                        <div class="col-md-1" id="jqueryImg"><img src="images/jquery.png" style="width: 85px; height: 85px;"></div>
-                        <div class="col-md-1" id="nodeImg"><img src="images/node.png" style="width: 85px; height: 85px;"></div>
+              <div class="col-lg-6 col-md-6 col-sm-12 test3">
+                  <div id="skills">
+                    <div class="text-center"><h2>SKILLS</h2></div>
+                    <div id="skillIcons" class="text-center">
+                          <img src="images/currentskills_1.png">
+                        </div>
                       </div>
                     </div>
+                    </div>
                   </div>
-      </div>
+        </div>
       <div id="contact" class="text-center">
         <h2>CONTACT</h2>
       </div>
@@ -108,20 +118,20 @@
           <button type="submit">Send</button>
         </form>
       </div>
-      <footer>
+    </div>
+      <footer class="text-center">
         <div id="footerMenu">
-          <span>&copy; 2017 Kent Walker All Rights Reserved</span>
-          <ul>
+        <ul>
+           <li><span id="copyright">&copy; 2017 Kent Walker All Rights Reserved</span></li>
             <li><a href="#work">WORK</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </footer>
-    </div>
 </div>
-<script src="js/jquery-3.1.0.min.js"></script>
- <!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
