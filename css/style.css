@@ -1,0 +1,304 @@
+#banner {
+  position: relative;
+  background-color: #FFC273;
+  width: 100%;
+  height: 11.3em;
+}
+
+body {
+  background-color: #D6CCBF;
+ overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px;
+
+}
+
+
+
+#sitelogo {
+  width: 400px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+nav {
+  position: relative;
+  background-color: black;
+
+  border-bottom-style: solid;
+  border-bottom-width: 0.625em;
+  border-bottom-color: white;
+}
+
+nav ul {
+  width: 450px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 130px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.adjLeft {
+  padding-left: 30px;
+}
+
+.adjRight {
+  padding-left: 15px;
+  text-align: right;
+}
+
+.adjCenter {
+  margin-left: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.row1 {
+  margin-bottom: 5%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+}
+nav ul li a:link {
+  text-decoration: none;
+
+}
+
+nav ul li a:hover
+{
+     color: white;
+     cursor: pointer;
+     border-bottom-color: #FFC273;
+}
+
+#menu {
+  /*position: absolute;*/
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.25em;
+}
+
+h2 {
+  display: inline-block;
+  margin-top: 0.45em;
+  padding: 0.25em;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.image-link {
+  width: 215px;
+  height: 150px;
+  position: relative;
+  background-color: #FFC273;
+}
+
+.image-link img {
+
+      width: 100%;
+      height: auto;
+}
+
+.work {
+  display: block;
+  margin-bottom: 5%;
+  height: 100%;
+}
+
+#shortcuts {
+
+  margin-right: 40px;
+}
+
+#about {
+  position: relative;
+  display: inline-block;
+  /*margin-top: 10%;
+  margin-left: 70px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:  50px;
+  padding-right: 50px;
+  width: 120%;
+  height: auto;
+  background-color: white;
+}
+
+#aboutimg {
+  /*position: absolute;
+  margin-left: 175px;*/
+  display: inline-block;
+
+}
+
+#about h2 {
+  display: inline-block;
+}
+
+#aboutmetxt {
+  padding: 10px;
+  position: absolute;
+  margin-top: 150px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#skills {
+  position: relative;
+  display: inline-block;
+  /*margin-top: 50px;
+  margin-left: 125px;
+  margin-right: 50px;*/
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.skillrow1 {
+  margin-top: 75px;
+  margin-left: 15px;
+}
+
+.skillrow2 {
+  margin-top: 40px;
+}
+
+#gitImg {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#jqueryImg {
+  margin-left: 55px;
+}
+
+#nodeImg {
+  margin-left: 80px;
+}
+
+#contact{
+  margin-top: 50px;
+}
+
+#contactform * {
+  font-size: 1.125em;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contactform {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+#contactform button {
+  position: relative;
+  background-color: #7F7A7A;
+  font-size: 1.5em;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.glyphicon {
+  position: absolute;
+  color: white;
+}
+
+footer {
+  position: relative;
+  border-top: solid 0.625em white;
+  height: 5em;
+  background-color: black;
+  text-align: center;
+}
+
+footer * {
+  font-weight: bold;
+  margin-top: 4px;
+  display: inline-block;
+  color: white;
+
+}
+
+footer span {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+footer ul li:nth-child(1) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+footer ul li:nth-child(2) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+footer ul li a:hover
+{
+     color: white;
+     cursor: pointer;
+     border-bottom-color: #FFC273;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+footer ul li a:link {
+  text-decoration: none;
+
+}
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width:768px) {
+  .skillrow2 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:1200px) {
+  .image-link {
+    width: 100px;
+    height: 100px;
+  }
+}
