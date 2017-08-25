@@ -212,7 +212,7 @@ h2 {
     display: inline;
     background-color: #FFC273;
     /*box-shadow: 1em 0 0 #FFC273, -1em 0 0 #FFC273;*/
-    padding: 0.5em 0.5em;
+    padding: 8px 8px;
     box-decoration-break: clone;
     font-weight: bold;
 }
