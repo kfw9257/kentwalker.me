@@ -7,8 +7,8 @@
 
 body {
   background-color: #D6CCBF;
- overflow-x: hidden;
-  font: normal 16px/25px sans-serif;
+  overflow-x: hidden;
+  font: normal 16px/27px sans-serif;
 
 }
 
@@ -192,7 +192,7 @@ h2 {
   margin-right: 10%;*/
   margin: 0 auto;
   padding-top: 2%;
-  padding-bottom: 3%;
+  /*padding-bottom: 15px;*/
   padding-left:  50px;
   padding-right: 50px;
   /*max-width: 90%;
@@ -206,16 +206,20 @@ h2 {
 #aboutText {
   display: inline-block;
   margin-top: 5%;
+  padding-bottom: 25px;
 }
 
 #aboutText p  {
     display: inline;
     background-color: #FFC273;
     /*box-shadow: 1em 0 0 #FFC273, -1em 0 0 #FFC273;*/
-    padding: 8px 8px;
-    box-decoration-break: clone;
-    font-weight: bold;
+    padding: 7px 8px;
+    /*box-decoration-break: clone;*/
+    font-weight: 700;
+
 }
+
+
 
 #myPicture {
   margin-top: 7%;
@@ -242,12 +246,11 @@ h2 {
   display: block;
   margin: 0 auto;
   padding-top: 2%;
-  padding-bottom: 13%;
+  /*padding-bottom: 20px;*/
   /*max-width: 90%;
   min-width: 75%;*/
   /*width: 80%;*/
-  /*height: 500px;*/
-  height: auto;
+  height: 100%;
   background-color: white;
 }
 
@@ -255,7 +258,8 @@ h2 {
   /*background-color: red;
   width: 450px;
   margin: 0 auto;*/
-  margin-top: 8%;
+  margin-top: 60px;
+  padding-bottom: 50px;
 }
 
 .test2 {
@@ -268,12 +272,13 @@ h2 {
   padding-right: 10%;
 }
 
-#test4 {
+#middleRow {
   margin: 0 auto;
+  /*display: flex;*/
 }
 
 #contact{
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 #contactform * {
