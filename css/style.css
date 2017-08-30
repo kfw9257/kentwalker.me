@@ -37,6 +37,7 @@ nav {
 }
 
 nav ul {
+  
   width: 450px;
   margin: 0 auto;
   padding: 0px;
@@ -53,7 +54,7 @@ nav ul li {
 
 }
 
-.adjLeft {
+/*.adjLeft {
   padding-left: 30px;
 }
 
@@ -66,7 +67,7 @@ nav ul li {
   margin-left: 25px;
   margin-right: 10px;
   text-align: center;
-}
+}*/
 
 nav ul li a {
   color: white;
@@ -172,8 +173,8 @@ h2 {
   margin: 0 auto;
   padding-top: 2%;
   /*padding-bottom: 15px;*/
-  padding-left:  50px;
-  padding-right: 50px;
+  padding-left:  25px;
+  padding-right: 25px;
   /*max-width: 90%;
   min-width: 75%;*/
   /*width: 80%;*/
