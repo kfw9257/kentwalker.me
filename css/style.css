@@ -9,7 +9,8 @@ body {
   background-color: #D6CCBF;
   overflow-x: hidden;
   font: normal 16px/27px sans-serif;
-
+  min-width: 450px;
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -51,21 +52,6 @@ nav ul li {
   padding-top: 5px;
   padding-bottom: 5px;
 
-}
-
-.adjLeft {
-  padding-left: 30px;
-}
-
-.adjRight {
-  padding-left: 15px;
-  text-align: right;
-}
-
-.adjCenter {
-  margin-left: 25px;
-  margin-right: 10px;
-  text-align: center;
 }
 
 nav ul li a {
@@ -117,7 +103,6 @@ h2 {
 }
 
 /*.image-link {
-
   width: 300px;
   position: relative;
   background-color: #FFC273;
@@ -376,6 +361,7 @@ footer a:nth-child(3) {
 
 #allContent {
   width: 97%;
+  min-width: 468px;
   margin: 0 auto;
 }
 
@@ -450,7 +436,7 @@ footer a:nth-child(3) {
 }
 
 @media screen and (max-width:992px) {
-  
+
   #copyright {
     display: none;
   }
