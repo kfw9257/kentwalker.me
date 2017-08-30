@@ -37,8 +37,8 @@ nav {
 }
 
 nav ul {
-  
-  width: 450px;
+
+  min-width: 300px;
   margin: 0 auto;
   padding: 0px;
 }
