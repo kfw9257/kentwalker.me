@@ -68,27 +68,6 @@ nav ul li {
   text-align: center;
 }
 
-/*.row {
-  margin-bottom: 5%;
-}*/
-
-/*.icon-row1 > div > div {
-  margin-bottom: 5em;
-}
-
-.icon-row2 > div > div {
-  margin-bottom: 3em;
-}*/
-
-/*.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}*/
-
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -156,8 +135,9 @@ h2 {
 
 #shortcuts {
   /*position: relative;*/
-  padding-left: 6%;
+  /*padding-left: 65px;*/
   /*background-color: yellow;*/
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -325,7 +305,13 @@ footer * {
 
 }
 
-footer ul li:nth-child(0) {
+#footerMenu {
+  /*background-color: blue;*/
+  width: 620px;
+  margin: 0 auto;
+}
+
+#footerMenu li:nth-child(0) {
   /*margin-right: 10px;*/
   display: inline-block;
   margin-left: 10px;
@@ -333,24 +319,28 @@ footer ul li:nth-child(0) {
   border-right: 1px solid white;
 }
 
-footer ul li:nth-child(1) {
+#footerMenu ul li:nth-child(1) {
   margin-right: 10px;
   padding-right: 20px;
   border-right: 1px solid white;
 }
 
-footer ul li:nth-child(2) {
+#footerMenu ul li:nth-child(2) {
   margin-right: 10px;
   padding-right: 20px;
   border-right: 1px solid white;
 }
 
-footer ul li:nth-child(3) {
+#footerMenu ul li:nth-child(3) {
   margin-right: 10px;
   padding-right: 20px;
   border-right: 1px solid white;
 }
-
+#footerMenu ul li:nth-child(4) {
+  /*margin-right: 50px;*/
+  padding-right: 20px;
+  /*border-right: 1px solid white;*/
+}
 
 footer ul li a:hover
 {
@@ -369,6 +359,21 @@ footer ul li a:link {
 
 }
 
+footer a:nth-child(2) {
+  position: absolute;
+  right: 80px;
+  top: 3px;
+  /*background-color: red;*/
+}
+
+footer a:nth-child(3) {
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  /*background-color: red;*/
+
+}
+
 #allContent {
   width: 97%;
   margin: 0 auto;
@@ -379,6 +384,28 @@ footer ul li a:link {
 @media screen and (max-width:480px) {
 
 
+}
+
+@media screen and (max-width:600px) {
+
+  footer ul {
+    display: none;
+  }
+
+  footer a:nth-child(2) {
+    position: absolute;
+    left: 5%;
+    /*top: 2px;*/
+    /*background-color: red;*/
+  }
+
+  footer a:nth-child(3) {
+    position: absolute;
+    left: 15%;
+    /*top: 3px;*/
+    /*background-color: red;*/
+
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -423,7 +450,10 @@ footer ul li a:link {
 }
 
 @media screen and (max-width:992px) {
-
+  
+  #copyright {
+    display: none;
+  }
 }
 
 @media screen and (max-width:1200px) {
