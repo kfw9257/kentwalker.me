@@ -9,8 +9,7 @@ body {
   background-color: #D6CCBF;
   overflow-x: hidden;
   font: normal 16px/27px sans-serif;
-  min-width: 475px;
-  overflow-x: hidden;
+
 }
 
 .container-fluid {
@@ -38,7 +37,7 @@ nav {
 }
 
 nav ul {
-  min-width: 400px;
+  width: 450px;
   margin: 0 auto;
   padding: 0px;
 }
@@ -52,6 +51,21 @@ nav ul li {
   padding-top: 5px;
   padding-bottom: 5px;
 
+}
+
+.adjLeft {
+  padding-left: 30px;
+}
+
+.adjRight {
+  padding-left: 15px;
+  text-align: right;
+}
+
+.adjCenter {
+  margin-left: 25px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 nav ul li a {
@@ -361,7 +375,6 @@ footer a:nth-child(3) {
 
 #allContent {
   width: 97%;
-  min-width: 468px;
   margin: 0 auto;
 }
 
