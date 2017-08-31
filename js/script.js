@@ -20,16 +20,16 @@ $("#menuIcon").mouseover(function(){
              //$("#collapsibleMenu").css("display","none");
           });
 
-$("#collapsibleMenu").mouseleave(function () {
+$("#collapsibleMenu").on ('mouseleave touchend',function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  $("#collapsibleMenu li a").on('touchend click', function () {
-  //hideMenu();
-    // $(this).css("background-color","#FFC273");
-    //location.href = this.getAttribute("href");
-    $("#collapsibleMenu").hide();
-  })
+  // $("#collapsibleMenu li a").on('touchend click', function () {
+  // //hideMenu();
+  //   // $(this).css("background-color","#FFC273");
+  //   //location.href = this.getAttribute("href");
+  //   $("#collapsibleMenu").hide();
+  // })
 
   // $("#collapsibleMenu").on("tap",function(){
   //     $(this).hide();
