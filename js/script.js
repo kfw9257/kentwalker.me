@@ -24,15 +24,15 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  // $("#collapsibleMenu li a").on('touchstart click', function () {
-  // /hideMenu();
-  //   window.open(this.getAttribute("href"));
-  //   $("#collapsibleMenu").hide();
-  // })
+  $("#collapsibleMenu li a").on('touchstart click', function () {
+  //hideMenu();
+    //window.open(this.getAttribute("href"));
+    $("#collapsibleMenu").delay(1000).hide();
+  })
 
-  $("#collapsibleMenu").on("tap",function(){
-      $(this).hide();
-  });
+  // $("#collapsibleMenu").on("tap",function(){
+  //     $(this).hide();
+  // });
 
   // function hideMenu() {
   //   $("#collapsibleMenu").css("display","none");
