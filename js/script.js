@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  $('#menuIcon').click( function(event){
+        event.stopPropagation();
+        $('#drop').toggle();
+    });
+
+    $(document).click( function(){
+        $('#drop').hide();
+    });
+
 
 $(".image-link").hover(function() {
         $(this).find("img").stop().animate({
