@@ -11,4 +11,17 @@ $(".image-link").hover(function() {
         });
       });
 
+$("#menuIcon").mouseover(function(){
+              //console.log("hover in");
+               $("#collapsibleMenu").css("display","block");
+          //
+          // }, function() {
+            //console.log("hover out");
+             //$("#collapsibleMenu").css("display","none");
+          });
+
+$("#collapsibleMenu").mouseleave(function () {
+      $("#collapsibleMenu").css("display","none");
+  });
+
 });

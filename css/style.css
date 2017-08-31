@@ -38,7 +38,7 @@ nav {
 
 nav ul {
 
-  min-width: 300px;
+  min-width: 420px;
   margin: 0 auto;
   padding: 0px;
 }
@@ -95,6 +95,99 @@ nav ul li a:hover
   width: 400px;
   margin: 0 auto;
 }
+
+#menuIcon {
+  /*display: none;*/
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  /*background-color: green;*/
+  /*padding-bottom: 10px;
+  float: left;
+  margin-left: 50px;*/
+}
+
+#menuTitle {
+  /*display: none;*/
+  position: absolute;
+  left: 44%;
+  top: -20px;
+  /*background-color: yellow;*/
+  display: inline-block;
+  color: white;
+
+}
+
+#menuIcon div {
+
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#mobileMenu {
+  display: none;
+}
+
+#mobileMenu ul > li:hover {
+  background-color: red;
+}
+
+#mobileMenu ul li {
+  font-size: 100px;
+  z-index: -20;
+  color: red;
+  display: block;
+}
+#mobileMenu ul {
+  position: absolute;
+  z-index: 20;
+  color: white;
+  background-color: green;
+}
+
+#collapsibleMenu {
+  z-index: 10;
+  top: -15px;
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  /*display: block;*/
+  background-color: black;
+  opacity: 0.9;
+}
+
+#collapsibleMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#collapsibleMenu ul li a:hover {
+
+  background-color: #FFC273;
+}
+
+#collapsibleMenu ul li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#menuContainer {
+  position: relative;
+   /*background-color: green;*/
+}
+
+
+/*#mobileMenu {
+  background-color: red;
+    width: 100px;
+}*/
 
 h1 {
   margin-top: 30px;
@@ -386,7 +479,29 @@ footer a:nth-child(3) {
 
 @media screen and (max-width:480px) {
 
+  nav ul {
+    display: none;
+  }
 
+  nav {
+    height: 70px;
+  }
+
+  #mobileMenu {
+    display: inline-block;
+  }
+
+  #collapsibleMenu {
+    /*display: block;*/
+  }
+
+  /*#menuTitle {
+    display: inline-block;
+  }
+
+  #menuIcon {
+    display: inline-block;
+  }*/
 }
 
 @media screen and (max-width:600px) {
