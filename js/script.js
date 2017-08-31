@@ -24,4 +24,14 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
+  $("#collapsibleMenu > li").click(function () {
+    //hideMenu();
+    $("#collapsibleMenu").css("display","none");
+  })
+
+  function hideMenu() {
+    $("#collapsibleMenu").css("display","none");
+
+  }
+
 });
