@@ -26,8 +26,9 @@ $("#collapsibleMenu").mouseleave(function () {
 
   $("#collapsibleMenu li a").on('touchstart click', function () {
   //hideMenu();
+    $(this).css("background-color","#FFC273");
     location.href = this.getAttribute("href");
-    $("#collapsibleMenu").delay(2000).hide();
+    $("#collapsibleMenu").hide();
   })
 
   // $("#collapsibleMenu").on("tap",function(){
