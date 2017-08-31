@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  var touch = 'ontouchstart' in document.documentElement
+              || navigator.maxTouchPoints > 0
+              || navigator.msMaxTouchPoints > 0;
+
   $('#menuIcon').click( function(event){
         event.stopPropagation();
         $('#drop').toggle();
@@ -9,16 +13,19 @@ $(document).ready(function() {
         $('#drop').hide();
     });
 
+if(!touch) {
+  
+    $(".image-link").hover(function() {
+            $(this).find("img").stop().animate({
+              "opacity" : 0.6
+            });
+          }, function() {
+            $(this).find("img").stop().animate({
+              "opacity" : 1.0
+            });
+          });
 
-$(".image-link").hover(function() {
-        $(this).find("img").stop().animate({
-          "opacity" : 0.6
-        });
-      }, function() {
-        $(this).find("img").stop().animate({
-          "opacity" : 1.0
-        });
-      });
+    }
 
 $("#menuIcon").hover(function(){
               //console.log("hover in");
