@@ -24,10 +24,10 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  $("#collapsibleMenu li a").on('touchstart click', function () {
+  $("#collapsibleMenu li a").ontouchend(function () {
   //hideMenu();
-    $(this).css("background-color","#FFC273");
-    location.href = this.getAttribute("href");
+    // $(this).css("background-color","#FFC273");
+    //location.href = this.getAttribute("href");
     $("#collapsibleMenu").hide();
   })
 
