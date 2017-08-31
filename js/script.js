@@ -24,14 +24,14 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  $("#collapsibleMenu > li").click(function () {
+  $("#collapsibleMenu > li").on('touchstart click', function () {
     //hideMenu();
     $("#collapsibleMenu").css("display","none");
   })
 
-  function hideMenu() {
-    $("#collapsibleMenu").css("display","none");
-
-  }
+  // function hideMenu() {
+  //   $("#collapsibleMenu").css("display","none");
+  //
+  // }
 
 });
