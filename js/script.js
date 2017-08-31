@@ -26,6 +26,7 @@ $("#collapsibleMenu").mouseleave(function () {
 
   $("#collapsibleMenu li a").on('touchstart click', function () {
     //hideMenu();
+    window.open(this.getAttribute("href")); 
     $("#collapsibleMenu").hide();
   })
 
