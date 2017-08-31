@@ -24,9 +24,9 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  $("#collapsibleMenu > li").on('touchstart click', function () {
+  $("#collapsibleMenu li a").on('touchstart click', function () {
     //hideMenu();
-    $("#collapsibleMenu").css("display","none");
+    $("#collapsibleMenu").hide();
   })
 
   // function hideMenu() {
