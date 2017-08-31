@@ -24,7 +24,7 @@ $("#collapsibleMenu").mouseleave(function () {
       $("#collapsibleMenu").css("display","none");
   });
 
-  $("#collapsibleMenu li a").ontouchend(function () {
+  $("#collapsibleMenu li a").on('touchend click', function () {
   //hideMenu();
     // $(this).css("background-color","#FFC273");
     //location.href = this.getAttribute("href");
