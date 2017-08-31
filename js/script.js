@@ -11,7 +11,7 @@ $(".image-link").hover(function() {
         });
       });
 
-$("#menuIcon").mouseover(function(){
+$("#menuIcon").hover(function(){
               //console.log("hover in");
                $("#collapsibleMenu").css("display","block");
           //
@@ -20,7 +20,7 @@ $("#menuIcon").mouseover(function(){
              //$("#collapsibleMenu").css("display","none");
           });
 
-$("#collapsibleMenu").on ('mouseleave touchend',function () {
+$("#collapsibleMenu").on ('mouseleave',function () {
       $("#collapsibleMenu").css("display","none");
   });
 
