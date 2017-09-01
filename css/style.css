@@ -100,7 +100,8 @@ nav ul li a:hover
   /*display: none;*/
   position: absolute;
   top: 20%;
-  left: 35%;
+  left: 34%;
+  margin-right: 10px;
   /*background-color: green;*/
   /*padding-bottom: 10px;
   float: left;
@@ -111,7 +112,7 @@ nav ul li a:hover
   /*display: none;*/
   position: absolute;
   left: 44%;
-  top: -20px;
+  top: -40px;
   /*background-color: yellow;*/
   display: inline-block;
   color: white;
@@ -144,19 +145,21 @@ nav ul li a:hover
   position: absolute;
   z-index: 20;
   color: white;
-  background-color: green;
+  /*background-color: green;*/
 }
 
 #collapsibleMenu {
-  z-index: 10;
-  top: -15px;
-  position: absolute;
+  /*z-index: 10;*/
+  /*top: -15px;*/
+  /*left: 9%;*/
+  /*position: absolute;*/
   display: none;
-  width: 100%;
-  margin: 0 auto;
+  /*width: 100%;*/
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
   /*display: block;*/
-  background-color: black;
-  opacity: 0.9;
+  /*background-color: black;
+  opacity: 0.9;*/
 }
 
 #collapsibleMenu ul li a {
@@ -179,10 +182,18 @@ nav ul li a:hover
 }
 
 #menuContainer {
+  z-index: 200;
+  /*width: 600px;*/
   position: relative;
    /*background-color: green;*/
 }
 
+#drop {
+  margin: 0 auto;
+  width: 300px;
+  background-color: black;
+  opacity: 0.9;
+}
 
 /*#mobileMenu {
   background-color: red;
@@ -190,7 +201,7 @@ nav ul li a:hover
 }*/
 
 h1 {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
   color: white;
   background-color: black;
@@ -476,6 +487,12 @@ footer a:nth-child(3) {
 }
 
 /*  MEDIA QUERIES  */
+
+@media (hover: none) {
+   a:link {
+      color: red;
+   }
+}
 
 @media screen and (max-width:480px) {
 
