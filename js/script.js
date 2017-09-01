@@ -4,14 +4,7 @@ $(document).ready(function() {
               || navigator.maxTouchPoints > 0
               || navigator.msMaxTouchPoints > 0;
 
-  $('#menuIcon').click( function(event){
-        event.stopPropagation();
-        $('#drop').toggle();
-    });
 
-    $(document).click( function(){
-        $('#drop').hide();
-    });
 
 if(!touch) {
 
@@ -25,28 +18,30 @@ if(!touch) {
             });
           });
 
-          $("#menuIcon").on ('touchstart',function () {
-                $("#menuContainer").show();
-                $("#drop").show();
+          $('#menuIcon').click( function(event){
+                event.stopPropagation();
+                $('#drop').toggle();
             });
 
-          $("#menuContainer").on ('touchend',function () {
-                $("#menuContainer").hide();
-                $("#drop").hide();
+            $(document).click( function(){
+                $('#drop').hide();
             });
 
 
     }else{
 
-      $("#menuIcon").on ('mouseenter',function () {
-            $("#menuContainer").show();
-            $("#drop").show();
+      $("#menuIcon").on ('touchstart',function (event) {
+          event.stopPropagation();
+          $('#drop').toggle();
+          $("#menuContainer").toggle();
         });
 
-      $("#menuContainer").on ('mouseleave',function () {
+      $(document).on ('touchend',function () {
             $("#menuContainer").hide();
             $("#drop").hide();
         });
+
+
 
     }
 
