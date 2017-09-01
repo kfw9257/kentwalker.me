@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 if(!touch) {
-
+  alert("Not a touch device");
     $(".image-link").hover(function() {
             $(this).find("img").stop().animate({
               "opacity" : 0.6
@@ -29,6 +29,8 @@ if(!touch) {
 
 
     }else{
+
+      alert("Using a touch device");
 
       $("#menuIcon").on ('touchstart',function (event) {
           event.stopPropagation();
