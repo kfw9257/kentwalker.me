@@ -38,10 +38,12 @@ if(!touch) {
 
 $("#menuIcon").on ('mouseenter',function () {
       $("#menuContainer").show();
+      $("#drop").show();
   });
 
 $("#menuContainer").on ('mouseleave',function () {
       $("#menuContainer").hide();
+      $("#drop").hide();
   });
 
   // $("#collapsibleMenu li a").on('touchend click', function () {

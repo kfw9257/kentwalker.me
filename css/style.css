@@ -196,7 +196,7 @@ nav ul li a:hover
 
 #drop {
   /*margin: 0 auto;*/
-  /*display: none;*/
+  display: none;
   z-index: 20;
   position: absolute;
   top: 0px;
