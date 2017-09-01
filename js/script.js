@@ -25,7 +25,32 @@ if(!touch) {
             });
           });
 
+          $("#menuIcon").on ('touchstart',function () {
+                $("#menuContainer").show();
+                $("#drop").show();
+            });
+
+          $("#menuContainer").on ('touchend',function () {
+                $("#menuContainer").hide();
+                $("#drop").hide();
+            });
+
+
+    }else{
+
+      $("#menuIcon").on ('mouseenter',function () {
+            $("#menuContainer").show();
+            $("#drop").show();
+        });
+
+      $("#menuContainer").on ('mouseleave',function () {
+            $("#menuContainer").hide();
+            $("#drop").hide();
+        });
+
     }
+
+
 
 // $("#menuIcon").hover(function(){
 //               //console.log("hover in");
@@ -36,15 +61,6 @@ if(!touch) {
 //              $("#menuContainer").hide();
 //           });
 
-$("#menuIcon").on ('mouseenter',function () {
-      $("#menuContainer").show();
-      $("#drop").show();
-  });
-
-$("#menuContainer").on ('mouseleave',function () {
-      $("#menuContainer").hide();
-      $("#drop").hide();
-  });
 
   // $("#collapsibleMenu li a").on('touchend click', function () {
   // //hideMenu();
