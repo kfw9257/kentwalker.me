@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
 if(!touch) {
-  
+
     $(".image-link").hover(function() {
             $(this).find("img").stop().animate({
               "opacity" : 0.6
@@ -27,17 +27,21 @@ if(!touch) {
 
     }
 
-$("#menuIcon").hover(function(){
-              //console.log("hover in");
-               $("#collapsibleMenu").css("display","block");
-          //
-          // }, function() {
-            //console.log("hover out");
-             //$("#collapsibleMenu").css("display","none");
-          });
+// $("#menuIcon").hover(function(){
+//               //console.log("hover in");
+//                $("#menuContainer").show();
+//
+//            }, function() {
+//             //console.log("hover out");
+//              $("#menuContainer").hide();
+//           });
 
-$("#collapsibleMenu").on ('mouseleave',function () {
-      $("#collapsibleMenu").css("display","none");
+$("#menuIcon").on ('mouseenter',function () {
+      $("#menuContainer").show();
+  });
+
+$("#menuContainer").on ('mouseleave',function () {
+      $("#menuContainer").hide();
   });
 
   // $("#collapsibleMenu li a").on('touchend click', function () {

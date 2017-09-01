@@ -149,19 +149,21 @@ nav ul li a:hover
 }
 
 #collapsibleMenu {
-  /*z-index: 10;*/
+  /*z-index: 12;*/
+  height: 100px;
   /*top: -15px;*/
   /*left: 9%;*/
-  /*position: absolute;*/
-  display: none;
+  /*position: relative;*/
+  width: 100%;
+  /*display: none;*/
   /*width: 100%;*/
   /*width: 100%;*/
   /*margin: 0 auto;*/
   /*display: block;*/
-  /*background-color: black;
-  opacity: 0.9;*/
+  background-color: red;
+  /*opacity: 0.9;*/
 }
-
+/*
 #collapsibleMenu ul li a {
   color: white;
   text-decoration: none;
@@ -179,20 +181,49 @@ nav ul li a:hover
 #collapsibleMenu ul li {
   padding-top: 15px;
   padding-bottom: 15px;
-}
+}*/
 
 #menuContainer {
-  z-index: 200;
+  /*z-index: 200;*/
   /*width: 600px;*/
+  display: none;
+  height: 200px;
+  width: 75%;
+  margin: -10px auto;
   position: relative;
-   /*background-color: green;*/
+  /*background-color: green;*/
 }
 
 #drop {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  /*display: none;*/
+  z-index: 20;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -150px;
   width: 300px;
   background-color: black;
   opacity: 0.9;
+}
+
+#drop li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#drop li a:hover {
+
+  background-color: #FFC273;
+}
+
+#drop li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*#mobileMenu {
