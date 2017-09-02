@@ -1,23 +1,25 @@
-.col-md-1 {
-  padding-right: 5px;
-  padding-left: 5px;
-
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
-
-.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
-
-
 }
-
 
 
 #game{
-
-  margin: 100px auto;
-
+  /*background-color: yellow;*/
+  /*width: 1000px;*/
+  /*margin: 0 auto;*/
+  margin-top: 7%;
 }
+
+/*#grid {
+  position: relative;
+  background-color: red;
+}*/
 
 #test{
   z-index: -10;
@@ -38,14 +40,14 @@ input{
 }
 
 
-.col-Centered {
+/*.col-Centered {
   display: inline-block;
   float: none;
   margin: 0 auto;
   text-align: left;
   vertical-align: middle;
   //margin-right:-4px;
-}
+}*/
 
 .modal{
   display: block;
@@ -69,11 +71,11 @@ body {
   background-color: #BCED91;
 }
 
-#firstRow{
+/*#firstRow{
   padding-bottom: 10px;
 
   border-bottom: 4px solid black;
-}
+}*/
 
 #myModal{
   display: block;
@@ -115,23 +117,23 @@ body {
 }
 
 .space{
-  display: inline-block;
+  display: block;
   /*position: relative;*/
   background: gray;
-  width: 109px;
-  height: 109px;
-  line-height: 90px;
+  width: 100%;
+  height: 150px;
+  line-height: 125px;
   text-align: center;
   vertical-align: bottom;
-  font-size: 50px;
+  font-size: 80px;
   border: 5px solid #000;
 
 
 }
 
 
-.row{
+/*.row{
   padding-top: 0px;
   margin: 0 auto;
 
-}
+}*/
