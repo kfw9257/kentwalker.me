@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 
 
-  document.getElementById("xbutton").addEventListener("click", function(){
+  $("#xbutton").on("click", function(){
 
 
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
   });
 
-   document.getElementById("obutton").addEventListener("click", function(){
+   $("obutton").on("click", function(){
 
 
 
@@ -83,12 +83,16 @@ $(document).ready(function() {
 
   });
 
+  // document.getElementById("space10").addEventListener("click", function(){
+  //       alert("Clicked Space 10");
+  // });
 
 
 
-  document.getElementById("space1").addEventListener("click", function(){
+  $("#space1").on("click", function(){
 
-     document.getElementById("space1").innerHTML = humPlayer;
+    // alert("Space 1 Click!");
+    $("#space1").text(humPlayer);
 
 
 
@@ -102,6 +106,7 @@ $(document).ready(function() {
 
 
       document.getElementById("space1").disabled = true;
+
       checkScore();
 
     currentPlayer = 1;
@@ -116,9 +121,9 @@ $(document).ready(function() {
   });
 
 
-  document.getElementById("space2").addEventListener("click", function(){
+  $("#space2").on("click", function(){
 
-document.getElementById("space2").innerHTML = humPlayer;
+   $("#space2").text(humPlayer);
 
     mainArr.splice(mainArr.indexOf(2),1);
 
@@ -138,9 +143,9 @@ document.getElementById("space2").innerHTML = humPlayer;
 
   });
 
-  document.getElementById("space3").addEventListener("click", function(){
+  $("#space3").on("click", function(){
 
-    document.getElementById("space3").innerHTML = humPlayer;
+    $("#space3").text(humPlayer);
     mainArr.splice(mainArr.indexOf(3),1);
 
 
@@ -162,10 +167,10 @@ document.getElementById("space2").innerHTML = humPlayer;
 
   });
 
-  document.getElementById("space4").addEventListener("click", function(){
+  $("#space4").on("click", function(){
 
 
-    document.getElementById("space4").innerHTML = humPlayer;
+    $("#space4").text(humPlayer);
     mainArr.splice(mainArr.indexOf(4),1);
 
 
@@ -188,8 +193,9 @@ document.getElementById("space4").disabled = true;
 
   });
 
-  document.getElementById("space5").addEventListener("click", function(){
-    document.getElementById("space5").innerHTML = humPlayer;
+  $("#space5").on("click", function(){
+
+    $("#space5").text(humPlayer);
     mainArr.splice(mainArr.indexOf(5),1);
 
 
@@ -213,11 +219,11 @@ document.getElementById("space4").disabled = true;
 
   });
 
-  document.getElementById("space6").addEventListener("click", function(){
+  $("#space6").on("click", function(){
 
    //if(currentPlayer == 0){
 
-    document.getElementById("space6").innerHTML = humPlayer;
+    $("#space6").text(humPlayer);
     mainArr.splice(mainArr.indexOf(6),1);
 
 
@@ -240,11 +246,11 @@ document.getElementById("space4").disabled = true;
 
   });
 
-  document.getElementById("space7").addEventListener("click", function(){
+  $("#space7").on("click", function(){
 
  //if(currentPlayer == 0){
 
-    document.getElementById("space7").innerHTML = humPlayer;
+    $("#space7").text(humPlayer);
     mainArr.splice(mainArr.indexOf(7),1);
 
 
@@ -268,12 +274,12 @@ document.getElementById("space4").disabled = true;
 
   });
 
-  document.getElementById("space8").addEventListener("click", function(){
+  $("#space8").on("click", function(){
 
     // if(currentPlayer == 0){
 
 
-    document.getElementById("space8").innerHTML = humPlayer;
+    $("#space8").text(humPlayer);
 
      mainArr.splice(mainArr.indexOf(8),1);
       humSpaces[2][1] = 8;
@@ -295,11 +301,11 @@ document.getElementById("space4").disabled = true;
     // }
   });
 
-  document.getElementById("space9").addEventListener("click", function(){
+  $("#space9").on("click", function(){
 
   if(currentPlayer == 0){
 
-    document.getElementById("space9").innerHTML = humPlayer;
+    $("#space9").text(humPlayer);
    mainArr.splice(mainArr.indexOf(9),1);
 
 
@@ -397,7 +403,7 @@ document.getElementById("space4").disabled = true;
 
         if(mainArr.indexOf(aiBlockMove) != -1){
 
-          console.log("Player has win opp");
+          //console.log("Player has win opp");
           playerWinOpp = true;
         }
       }
@@ -406,7 +412,7 @@ document.getElementById("space4").disabled = true;
     //if(oneSpaceLeft == false){
       for(var j = 0; j < aiSpaces.length; j++){
         if(aiSpaces[j].length == 1 && mainArr.indexOf(aiSpaces[j][0]) != -1){
-          console.log("PC has win opp");
+          //console.log("PC has win opp");
           aiWinOpp = true;
           aiWinMove = aiSpaces[j][0];
 
@@ -414,11 +420,11 @@ document.getElementById("space4").disabled = true;
           aiWinOpp = false;
         }
       }
-      
+
 
 
     if(mainArr.length == 0 && (playerWins == false && aiWins == false)){
-      console.log("Draw");
+      //console.log("Draw");
       window.setTimeout(resetGame, 1000);
 
     }
@@ -449,7 +455,7 @@ document.getElementById("space4").disabled = true;
    for(var i = 1; i < 10; i++){
        document.getElementById('space'+i).disabled = false;
        document.getElementById('space'+i).innerHTML = "";
-       document.getElementById('space'+i).style.background = "gray";
+       document.getElementById('space'+i).style.background = "lightgray";
   }
      //document.getElementById("xbutton").style.visibility = "visible";
     //document.getElementById("obutton").style.visibility = "visible";
@@ -478,7 +484,7 @@ document.getElementById("space4").disabled = true;
     return true;
     });
 
-    console.log("empty spaces " + emptySpaceArr);
+  //  console.log("empty spaces " + emptySpaceArr);
 
    var move = randomSpace(0,emptySpaceArr.length);
 
@@ -490,28 +496,28 @@ document.getElementById("space4").disabled = true;
 
     if(aiWinOpp == true && emptySpaceArr.indexOf(aiWinMove) != -1){
 
-      console.log("go for win");
+      //console.log("go for win");
 
       aiSpace = aiWinMove;
 
 
     }else if(playerWinOpp == true && aiWinOpp == false && emptySpaceArr.indexOf(aiBlockMove) != -1){
 
-      console.log("block");
+      //console.log("block");
 
       aiSpace = aiBlockMove;
       playerWinOpp = false;
 
     }else{
 
-      console.log("One Space Left? " + playerWinOpp);
-      console.log("Ai Win Opp? " + aiWinOpp);
-      console.log("random space");
+      // console.log("One Space Left? " + playerWinOpp);
+      // console.log("Ai Win Opp? " + aiWinOpp);
+      // console.log("random space");
        aiSpace = emptySpaceArr[move];
 
     }
 
-    console.log("AI's move " + aiSpace);
+    // console.log("AI's move " + aiSpace);
 
      document.getElementById('space'+aiSpace).innerHTML = aiPlayer;
      document.getElementById('space'+aiSpace).disabled = true;

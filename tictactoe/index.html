@@ -10,54 +10,109 @@
 </head>
 <body>
   <div class="container">
-    <div id="myModal" class="modalDialog">
-  	<div id="chooseXO" class="text-center">
-      <h3>Select</h3>
-        <input type="button" class="btn btn-default" id="xbutton" value="X"/>
+   <div id="myModal" class="modalDialog">
+    	<div id="chooseXO" class="text-center">
+        <h3>Select</h3>
+          <input type="button" class="btn btn-default" id="xbutton" value="X"/>
 
-        <span>or</span>
-        <input type="button" class="btn btn-default" id="obutton" value="O"/>
-    </div>
-
-  </div>
-
-    <div id="game">
-      <!-- <div id="grid"> -->
-        <div class="row .row-Centered no-gutters">
-          <div class="offset-md-3 col-md-2">
-            <div class="space" id="space1"></div>
-          </div>
-          <div class="col-md-2">
-            <div class="space" id="space2"></div>
-          </div>
-          <div class="col-md-2">
-            <div class="space" id="space3"></div>
-          </div>
-        </div>
-        <div class="row .row-Centered  no-gutters">
-          <div class="offset-md-3 col-md-2">
-           <div class="space" id="space4"></div>
-          </div>
-          <div class="col-md-2">
-             <div class="space" id="space5"></div>
-          </div>
-          <div class="col-md-2">
-             <div class="space" id="space6"></div>
-          </div>
-        </div>
-        <div class="row .row-Centered  no-gutters">
-           <div class="offset-md-3 col-md-2">
-            <div class="space" id="space7"></div>
-          </div>
-          <div class="col-md-2">
-             <div class="space" id="space8"></div>
-          </div>
-          <div class="col-md-2">
-             <div class="space" id="space9"></div>
-          </div>
-        </div>
+          <span>or</span>
+          <input type="button" class="btn btn-default" id="obutton" value="O"/>
       </div>
+
+  </div> 
+
+    <!-- <div id="game">
+      <div id="grid">
+        <div class="row .row-Centered no-gutters">
+          <div class="offset-3 col-2">
+            <div  id="space1">&nbsp;</div>
+          </div>
+          <div class="col-2">
+            <div  id="space2">&nbsp;</div>
+          </div>
+          <div class="col-2">
+            <div  id="space3">&nbsp;</div>
+          </div>
+        </div>
+        <div class="row .row-Centered  no-gutters">
+          <div class="offset-3 col-2">
+           <div  id="space4">&nbsp;</div>
+          </div>
+          <div class="col-2">
+             <div  id="space5">&nbsp;</div>
+          </div>
+          <div class="col-2">
+             <div  id="space6">&nbsp;</div>
+          </div>
+        </div>
+        <div class="row .row-Centered  no-gutters">
+           <div class="offset-3 col-2">
+            <div  id="space7">&nbsp;</div>
+          </div>
+          <div class="col-2">
+             <div  id="space8">&nbsp;</div>
+          </div>
+          <div class="col-2">
+             <div  id="space9">&nbsp;</div>
+          </div>
+        </div>
+      </div> -->
     <!-- </div> -->
+    <div id="wrapper">
+      <table id="board">
+        <tr>
+          <td>
+            <div class="space" id="space1">
+              <!-- <div id="space1"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space2">
+              <!-- <div id="space2"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space3">
+              <!-- <div id="space3"></div> -->
+            </div>
+          </td>
+         </tr>
+        <tr>
+          <td>
+            <div class="space" id="space4">
+              <!-- <div id="space4"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space5">
+              <!-- <div id="space5"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space6">
+              <!-- <div id="space6"></div> -->
+            </div>
+          </td>
+         </tr>
+        <tr>
+          <td>
+            <div class="space" id="space7">
+              <!-- <div id="space7"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space8">
+              <!-- <div id="space8"></div> -->
+            </div>
+          </td>
+          <td>
+            <div class="space" id="space9">
+              <!-- <div id="space9"></div> -->
+            </div>
+            </td>
+         </tr>
+       </table>
+     </div>
   </div>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
