@@ -38,10 +38,10 @@ if(!touch) {
           $("#menuContainer").toggle();
         });
 
-      $(document).on ('touchend',function () {
-            $("#menuContainer").hide();
-            $("#drop").hide();
-        });
+      // $(document).on ('touchend',function () {
+      //       $("#menuContainer").hide();
+      //       $("#drop").hide();
+      //   });
 
 
 
