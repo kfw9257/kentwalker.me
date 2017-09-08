@@ -48,7 +48,6 @@ if(!touch) {
     }
 
 
-
 // $("#menuIcon").hover(function(){
 //               //console.log("hover in");
 //                $("#menuContainer").show();
