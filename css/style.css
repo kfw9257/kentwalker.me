@@ -253,7 +253,9 @@ h2 {
 }
 
 .image-link {
-  width: 300px;
+  /*min-width: 300px;*/
+  max-width: 100%;
+  height: auto;
   position: relative;
   background-color: #FFC273;
 }
@@ -272,8 +274,10 @@ h2 {
   /*position: relative;*/
   /*padding-left: 65px;*/
   /*background-color: yellow;*/
-  max-width: 950px;
+  width: 78%;
+  /*padding-left: 6%;*/
   margin: 0 auto;
+
 }
 
 /*#allContent {
@@ -290,6 +294,7 @@ h2 {
 }
 
 .img-fluid {
+  /*display: inline-block;*/
   max-width: 100%;
   height: auto;
 }
@@ -573,6 +578,10 @@ footer ul li a:link {
 @media screen and (max-width:645px) {
 
   footer ul {
+    display: none;
+  }
+
+  #menuContainer {
     display: none;
   }
 
