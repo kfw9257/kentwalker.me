@@ -188,22 +188,22 @@ nav ul li a:hover
 }*/
 
 #menuContainer {
-  /*z-index: 200;*/
+  z-index: 200;
   /*width: 600px;*/
-  /*display: none;*/
+  display: none;
   height: 200px;
-  width: 75%;
+  /*width: 75%;*/
   margin: -10px auto;
   position: relative;
-  background-color: green;
+  /*background-color: green;*/
 }
 
 #drop {
   /*margin: 0 auto;*/
   display: none;
-  z-index: 20;
+  z-index: 1000;
   position: absolute;
-  top: 5.7%;
+  top: -0.4%;
   left: 50%;
   margin-left: -150px;
   width: 300px;
@@ -542,6 +542,7 @@ footer ul li a:link {
 }
 
 #allContent {
+  position: relative;
   width: 97%;
   margin: 0 auto;
 }

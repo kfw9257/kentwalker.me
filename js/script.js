@@ -15,7 +15,7 @@ $(document).ready(function() {
               || navigator.msMaxTouchPoints > 0;
 
 
-// if(!touch) {
+ if(!touch) {
   // alert("Not a touch device");
     $(".image-link").hover(function() {
             $(this).find("img").stop().animate({
@@ -27,12 +27,12 @@ $(document).ready(function() {
             });
           });
 
-        // }
+        }
 
           $('#menuIcon').click( function(event){
                 event.stopPropagation();
                 $('#drop').toggle();
-                // $('.navLinks').toggle();
+                // $('#menuContainer').toggle();
             });
 
             $(document).click( function(){
