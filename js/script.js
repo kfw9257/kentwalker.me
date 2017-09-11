@@ -5,7 +5,7 @@ $(document).ready(function() {
   $(window).resize(function() {
     $screenWidthCheck = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     if ($screenWidthCheck > 480) {
-        $("#menuContainer").hide();
+        $("#drop").hide();
     }
    });
 
@@ -47,12 +47,12 @@ $(document).ready(function() {
     // }else{
 
       // alert("Using a touch device");
-
-      $("#menuIcon").on ('touchstart',function () {
-          // event.stopPropagation();
-          $('#drop').show();
+      //
+      // $("#menuIcon").on ('touchstart',function (event) {
+      //    event.stopPropagation();
+      //     $('#drop').show();
           // $("#menuContainer").toggle();
-        });
+        // });
 
       // $("#menuContainer").on ('touchend',function () {
       //       $("#menuContainer").hide();
