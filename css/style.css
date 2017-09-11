@@ -108,6 +108,10 @@ nav ul li a:hover
   margin-left: 50px;*/
 }
 
+#menuIcon:hover {
+  cursor: pointer;
+}
+
 #menuTitle {
   /*display: none;*/
   position: absolute;
@@ -131,9 +135,9 @@ nav ul li a:hover
   display: none;
 }
 
-#mobileMenu ul > li:hover {
+/*#mobileMenu ul > li:hover {
   background-color: red;
-}
+}*/
 
 #mobileMenu ul li {
   font-size: 100px;
@@ -199,7 +203,7 @@ nav ul li a:hover
   display: none;
   z-index: 20;
   position: absolute;
-  top: 0px;
+  top: 230px;
   left: 50%;
   margin-left: -150px;
   width: 300px;
@@ -209,6 +213,7 @@ nav ul li a:hover
 
 #drop li a {
   color: white;
+
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
@@ -222,10 +227,14 @@ nav ul li a:hover
 }
 
 #drop li {
+  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+.navLinks {
+  /*display: none;*/
+}
 /*#mobileMenu {
   background-color: red;
     width: 100px;

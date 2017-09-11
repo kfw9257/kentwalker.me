@@ -31,29 +31,33 @@ $(document).ready(function() {
 
           $('#menuIcon').click( function(event){
                 event.stopPropagation();
-                $('#menuContainer').toggle();
                 $('#drop').toggle();
+                // $('.navLinks').toggle();
             });
 
             $(document).click( function(){
-                $('#menuContainer').hide();
+                $('#drop').hide();
             });
 
+            // when a link is clicked and 'jumps' to a section of the page the mobile-nav class is removed
+          // navLinks.addEventListener("click", function() {
+          //     navLinks.classList.toggle("mobile-nav");
+          // }, false);
 
     // }else{
 
       // alert("Using a touch device");
 
-      $("#menuIcon").on ('touchstart',function (event) {
-          event.stopPropagation();
-          $('#drop').toggle();
-          $("#menuContainer").toggle();
+      $("#menuIcon").on ('touchstart',function () {
+          // event.stopPropagation();
+          $('#drop').show();
+          // $("#menuContainer").toggle();
         });
 
-      $("#menuContainer").on ('touchend',function () {
-            $("#menuContainer").hide();
-            $("#drop").hide();
-        });
+      // $("#menuContainer").on ('touchend',function () {
+      //       $("#menuContainer").hide();
+      //       $("#drop").hide();
+      //   });
 
 
 
