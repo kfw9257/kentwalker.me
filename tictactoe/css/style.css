@@ -129,14 +129,15 @@ table {
   position: relative;
   /*z-index: -500;*/
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse !important;
   z-index: 100;
 }
 td {
+  background-clip: padding-box;
   position: relative;
   font-size: 80px;
   width: 33.333%;
-  border: 6px solid #222;
+  border: 6px solid #222 !important;
   background-color: lightgray;
   z-index: 200;
 }
@@ -148,21 +149,21 @@ td::after {
   z-index: 300;
 }
 td {
-  border: 6px solid #222;
+  border: 6px solid #222 !important;
 }
 td:first-of-type {
-  border-left-color: transparent;
-  border-top-color: transparent;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
 }
 td:nth-of-type(2) {
-  border-top-color: transparent;
+  border-top-color: transparent !important;
 }
 td:nth-of-type(3) {
-  border-right-color: transparent;
-  border-top-color: transparent;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
 }
 tr:nth-of-type(3) td {
-  border-bottom-color: transparent;
+  border-bottom-color: transparent !important;
 }
 
 
