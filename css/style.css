@@ -190,12 +190,12 @@ nav ul li a:hover
 #menuContainer {
   /*z-index: 200;*/
   /*width: 600px;*/
-  display: none;
+  /*display: none;*/
   height: 200px;
   width: 75%;
   margin: -10px auto;
   position: relative;
-  /*background-color: green;*/
+  background-color: green;
 }
 
 #drop {
@@ -203,7 +203,7 @@ nav ul li a:hover
   display: none;
   z-index: 20;
   position: absolute;
-  top: 230px;
+  top: 5.7%;
   left: 50%;
   margin-left: -150px;
   width: 300px;
