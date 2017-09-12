@@ -1,6 +1,6 @@
 
 
-var twitchArr = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "comster404"];
+var twitchArr = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "summonersinnlive", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "comster404"];
 
 var openingDiv = "";
 var middleDiv = "";
@@ -75,17 +75,17 @@ $("#optOffline").click(function(){
 
 $( document ).ajaxStop(function() {
 
-  onlineOpeningDiv = "<div class='online row'><div class='col-md-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='";
+  onlineOpeningDiv = "<div class='online row'><div class='col-xs-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='";
 
-  offlineOpeningDiv = "<div class='offline row'><div class='col-md-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='";
+  offlineOpeningDiv = "<div class='offline row'><div class='col-xs-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='";
 
-  middleDiv = "' height='75px' width='50px' /></div><div class='col-md-3 text-center' style='padding-top: 15px;'><a href='https://www.twitch.tv/";
+  middleDiv = "' height='75px' width='50px' /></div><div class='col-xs-3 text-center' style='padding-top: 15px;'><a href='https://www.twitch.tv/";
 
-  middleClosingDiv = "</a></div><div class='col-md-6 text-right' style='padding-top: 15px;'><b>";
+  middleClosingDiv = "</a></div><div class='col-xs-6 text-right' style='padding-top: 15px;'><b>";
 
-  accountClosedOpeningDiv = "<div class='offline row'><div class='col-md-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='http://www.banachcourse.com/wp-content/uploads/2012/10/Dramatic-Question-Mark-300x300.png' width='50px' /></div><div class='col-md-3 text-center' style='padding-top: 15px;'><a href='https://www.twitch.tv/";
+  accountClosedOpeningDiv = "<div class='offline row'><div class='col-xs-2' style='padding: 0;'><img class= 'img-rounded img-responsive' src='http://www.banachcourse.com/wp-content/uploads/2012/10/Dramatic-Question-Mark-300x300.png' width='50px' /></div><div class='col-xs-3 text-center' style='padding-top: 15px;'><a href='https://www.twitch.tv/";
 
-  accountClosedClosingDiv = "</a></div><div class='col-md-6 text-right' style='padding-top: 15px;'><b>Account Closed</b></div></div>";
+  accountClosedClosingDiv = "</a></div><div class='col-xs-6 text-right' style='padding-top: 15px;'><b>Account Closed</b></div></div>";
 
  if(document.getElementById("optAll").checked){
 
