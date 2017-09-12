@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch App</title>
+  <meta name="description" content="App that displays Twitch Streams">
+  <meta name="author" content="Kent Walker">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+
+    <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Twitch Streams</h1>
+
+  <div id="menu" class="text-center">
+
+    <div class="radio-inline">
+       <label><input type="radio" name="optradio" id="optAll" checked>All</label>
+    </div>
+    <div class="radio-inline">
+        <label><input type="radio" name="optradio" id="optOnline">Online</label>
+    </div>
+    <div class="radio-inline">
+       <label><input type="radio" name="optradio" id="optOffline">Offline</label>
+    </div>
+
+  </div>
+  <p class="text-center"><i>Page refreshes every 60 seconds</i></p>
+
+      <div id="streams">
+
+      </div>
+
+      <div id="bottom">
+
+      </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

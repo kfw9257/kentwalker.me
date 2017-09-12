@@ -1,0 +1,74 @@
+h1{
+  font-family: 'Orbitron';
+  font-size: 50px;
+  background: #FBA16C;
+  width: 70%;
+  color: #35586C;
+  transform: translate(21%, 0%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+p{
+  background: #FBA16C;
+  width: 70%;
+  color: #35586C;
+  transform: translate(21%, 0%);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#menu{
+  background: #FBA16C;
+  color: #35586C;
+  width: 70%;
+  transform: translate(21%, 0%);
+  margin: 0px;
+  padding-top: 10px;
+
+}
+
+body {
+  background: #35586C;
+
+}
+
+#streams{
+  margin: 0px;
+  padding: 0px;
+  color: black;
+
+}
+
+.offline{
+  background-color: #C7C7C7;
+  border-radius: 10px;
+  width: 70%;
+   transform: translate(23%, 0%);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.online{
+  background-color: #FBDB0C;
+  width: 70%;
+  border-radius: 10px;
+    transform: translate(23%, 0%);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+#bottom{
+  background: #FBA16C;
+  width: 70%;
+  transform: translate(21%, 0%);
+  padding: 20px;
+}
