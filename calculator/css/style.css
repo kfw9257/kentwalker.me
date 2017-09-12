@@ -2,6 +2,7 @@ body{
   font-family: Exo;
   color: #67E6EC;
   background: #000000;
+  position: relative;
 }
 
 #displayArea{
@@ -15,6 +16,10 @@ body{
   width: 310px;
   color: black;
 }
+
+/*.container {
+  background-color: purple;
+}*/
 
 #calcArea{
   margin-left: 2%;
@@ -33,8 +38,14 @@ body{
   padding: 0;
 }*/
 
+#wrapper {
+  /*background-color: purple;*/
+  width: 500px;
+  margin: 0 auto;
+}
+
 #calculator{
-  margin:  50px auto;
+  margin:  5% auto;
   /*//position: absolute;
   //transform: translate(105%, 0%);*/
   height: 475px;
@@ -144,4 +155,19 @@ body{
 
 input {
   text-align: right;
+}
+
+/*p {
+  position: absolute;
+}*/
+
+@media only screen and (max-width: 450px) {
+    #wrapper{
+      position: absolute;
+      -ms-transform: scale(0.5, 0.5); /* IE 9 */
+      -webkit-transform: scale(0.5, 0.5); /* Safari */
+      transform: scale(0.5, 0.5);
+      left: -70px;
+      top: -100px;
+    }
 }
