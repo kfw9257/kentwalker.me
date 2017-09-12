@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Calculator</title>
+  <meta name="description" content="Javascript Calculator App">
+  <meta name="author" content="Kent Walker">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="origin">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+
+<div class="container">
+  <div id="calculator">
+
+  <div class="text-center">
+    <input type="text" value="0" id="displayArea"
+           readonly></input><br />
+  <input type="text" value="0" readonly id="calcArea"></input>
+  </div>
+    <div class="row rowReg">
+      <div class="col-xs-1 col-xs-offset-1 outerBtn"><button type="button" class="btn btn-default regBtn" id="acBtn">AC</button></div>
+        <div class="col-xs-1 col-xs-offset-1 innerLeftBtn">
+          <button type="button" class="btn btn-default regBtn innerBtn" id="clearBtn">CE</button>
+      </div>
+      <div class="col-xs-1 col-xs-offset-1 innerBtn">
+          <button type="button" class="btn btn-default regBtn" id="divideBtn">&divide;</button>
+      </div>
+      <div class="col-xs-1 col-xs-offset-1 outerRightBtn">
+          <button type="button" class="btn btn-default regBtn" id="multiplyBtn">X</button>
+      </div>
+  </div>
+  <div class="row rowReg">
+    <div class="col-xs-1 outerBtn">
+          <button type="button" class="btn btn-default regBtn outerBtn" id="sevenBtn">7</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1 innerLeftBtn">
+          <button type="button" class="btn btn-default regBtn" id="eightBtn">8</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1">
+          <button type="button" class="btn btn-default innerBtn regBtn" id="nineBtn">9</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1 outerRightBtn">
+          <button type="button" class="btn btn-default regBtn" id="subtractBtn">-</button>
+      </div>
+  </div>
+  <div class="row rowReg">
+    <div class="col-xs-1 col-xs-offset-1">
+          <button type="button" class="btn btn-default outerBtn regBtn" id="fourBtn">4</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1 innerLeftBtn">
+          <buttoinnerLeftBtnn type="button" class="btn btn-default regBtn innerBtn" id="fiveBtn">5</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1">
+          <button type="button" class="btn btn-default regBtn" id="sixBtn">6</button>
+      </div>
+    <div class="col-xs-1 col-xs-offset-1 outerRightBtn">
+          <button type="button" class="btn btn-default regBtn" id="addBtn">+</button>
+      </div>
+  </div>
+  <div class="row rowReg">
+    <div class="row rowSmall">
+
+      <div class="col-xs-8">
+        <div class="row rowSmall">
+
+        <div class="col-xs-1 col-xs-offset-1 outerSmallBtn">
+          <button type="button" class="btn btn-default smallBtn " id="oneBtn">1</button>
+        </div>
+
+        <div class="col-xs-1 col-xs-offset-2 innerSmallBtn">
+          <button type="button" class="btn btn-default smallBtn" id="twoBtn">2</button>
+        </div>
+
+        <div class="col-xs-1 col-xs-offset-2 innerRightBtn">
+          <button type="button" class="btn btn-default smallBtn" id="threeBtn">3</button>
+
+        </div>
+
+      </div>
+    <div class="row smallestRow">
+      <div class="col-xs-1 col-xs-offset-1 zeroBtn">
+          <button type="button" class="btn btn-default wideBtn" id="zeroBtn">0</button>
+      </div>
+
+      <div class="col-xs-1 col-xs-offset-5" id="decimalBtn">
+          <button type="button" class="btn btn-default smallBtn" id="decimalBtn">.</button>
+    </div>
+    </div>
+  </div>
+
+      <div class="col-xs-1 outerRightBtn">
+        <div class="row">
+            <button type="button" class="btn btn-default longBtn" id="equalsBtn">=</button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+  <p class="text-center">Copyright &copy; 2016 Kent Walker</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
