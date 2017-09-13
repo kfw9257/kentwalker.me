@@ -42,6 +42,10 @@ function startGettingChannels(){
 
 }
 
+
+
+$( ".online" ).parent().css( "background-color", "red" );
+
 $("#optAll").click(function(){
 
   if(optionChecked !== "all"){

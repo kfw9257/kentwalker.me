@@ -17,29 +17,31 @@
      <![endif]-->
 </head>
 <body>
-<div class="container">
-  <h1 class="text-center">Twitch Streams</h1>
+<div class="container-fluid">
+  <div id="wrapper">
+    <h1 class="text-center">Twitch Streams</h1>
 
-  <div id="menu" class="text-center">
+    <div id="menu" class="text-center">
 
-    <div class="radio-inline">
-       <label><input type="radio" name="optradio" id="optAll" checked>All</label>
-    </div>
-    <div class="radio-inline">
-        <label><input type="radio" name="optradio" id="optOnline">Online</label>
-    </div>
-    <div class="radio-inline">
-       <label><input type="radio" name="optradio" id="optOffline">Offline</label>
-    </div>
-
-  </div>
-  <p class="text-center"><i>Page refreshes every 60 seconds</i></p>
-
-      <div id="streams">
-
+      <div class="radio-inline">
+         <label><input type="radio" name="optradio" id="optAll" checked>All</label>
+      </div>
+      <div class="radio-inline">
+          <label><input type="radio" name="optradio" id="optOnline">Online</label>
+      </div>
+      <div class="radio-inline">
+         <label><input type="radio" name="optradio" id="optOffline">Offline</label>
       </div>
 
-      <div id="bottom"></div>
+    </div>
+    <p class="text-center"><i>Page refreshes every 60 seconds</i></p>
+
+        <div id="streams">
+
+        </div>
+
+        <div id="bottom"></div>
+      </div>  
 </div>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>

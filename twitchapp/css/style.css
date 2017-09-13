@@ -1,9 +1,18 @@
 body {
   background: #35586C;
-  min-width: 425px;
+  min-width: 375px;
   overflow-x: hidden;
   margin-top: 2%;
   height: 100%;
+}
+
+.container-fluid {
+  /*width: 80%;*/
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -11,7 +20,7 @@ h1{
   font-family: 'Orbitron';
   font-size: 50px;
   background: #FBA16C;
-  width: 80%;
+  width: inherit;
   color: #35586C;
   /*transform: translate(21%, 0%);*/
   border-top-right-radius: 10px;
@@ -25,7 +34,7 @@ h1{
 
 p{
   background: #FBA16C;
-  width: 80%;
+  width: inherit;
   color: #35586C;
   /*transform: translate(21%, 0%);*/
   margin: 0 auto;
@@ -36,7 +45,7 @@ p{
 #menu{
   background: #FBA16C;
   color: #35586C;
-  width: 80%;
+  width: inherit;
   /*transform: translate(21%, 0%);*/
   margin: 0 auto;
   padding-top: 10px;
@@ -46,7 +55,8 @@ p{
 
 
 #streams{
-  margin: 0px;
+  width: 95%;
+  margin: 0 auto;
   padding: 0px;
   color: black;
 
@@ -55,7 +65,7 @@ p{
 .offline{
   background-color: #C7C7C7;
   border-radius: 10px;
-  max-width: 80%;
+  width: inherit;
   /*transform: translate(23%, 0%);*/
   margin: 5px auto;
   /*margin-top: 5px;
@@ -67,7 +77,7 @@ p{
 
 .online{
   background-color: #FBDB0C;
-  max-width: 80%;
+  width: inherit;
   border-radius: 10px;
   /*transform: translate(23%, 0%);*/
   /*margin-top: 5px;
@@ -80,14 +90,19 @@ p{
 
 #bottom{
   background: #FBA16C;
-  max-width: 80%;
+  width: inherit;
   /*transform: translate(21%, 0%);*/
   margin: 0 auto;
   padding: 20px;
 }
 
 @media screen and (max-width:480px) {
-
+  #wrapper {
+    width: 100%;
+  }
+  #streams {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:640px) {
