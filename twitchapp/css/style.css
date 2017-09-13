@@ -6,6 +6,10 @@ body {
   height: 100%;
 }
 
+.container {
+  background-color: purple;
+}
+
 h1{
   font-family: 'Orbitron';
   font-size: 50px;
@@ -61,6 +65,7 @@ p{
   margin-bottom: 5px;*/
   padding: 20px;
   font-size: 12px;
+  height: 100%;
 }
 
 .online{
@@ -73,6 +78,7 @@ p{
   margin: 5px auto;
   padding: 20px;
   font-size: 12px;
+  height: 100%;
 }
 
 #bottom{
