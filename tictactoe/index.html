@@ -1,121 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tic-Tac-Toe</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="referrer" content="origin">
-      <link rel="stylesheet" type="text/css" href="css/reset.css">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>TIC TAC TOE</title>
+  <meta name="description" content="DESCRIPTION">
+  <meta name="author" content="AUTHOR">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
 </head>
 <body>
-  <div class="container">
-   <div id="myModal" class="modalDialog">
-    	<div id="chooseXO" class="text-center">
-        <h3>Select</h3>
-          <input type="button" class="btn btn-default" id="xbutton" value="X"/>
-
-          <span>or</span>
-          <input type="button" class="btn btn-default" id="obutton" value="O"/>
-      </div>
-
-  </div> 
-
-    <!-- <div id="game">
-      <div id="grid">
-        <div class="row .row-Centered no-gutters">
-          <div class="offset-3 col-2">
-            <div  id="space1">&nbsp;</div>
-          </div>
-          <div class="col-2">
-            <div  id="space2">&nbsp;</div>
-          </div>
-          <div class="col-2">
-            <div  id="space3">&nbsp;</div>
-          </div>
-        </div>
-        <div class="row .row-Centered  no-gutters">
-          <div class="offset-3 col-2">
-           <div  id="space4">&nbsp;</div>
-          </div>
-          <div class="col-2">
-             <div  id="space5">&nbsp;</div>
-          </div>
-          <div class="col-2">
-             <div  id="space6">&nbsp;</div>
-          </div>
-        </div>
-        <div class="row .row-Centered  no-gutters">
-           <div class="offset-3 col-2">
-            <div  id="space7">&nbsp;</div>
-          </div>
-          <div class="col-2">
-             <div  id="space8">&nbsp;</div>
-          </div>
-          <div class="col-2">
-             <div  id="space9">&nbsp;</div>
-          </div>
-        </div>
-      </div> -->
-    <!-- </div> -->
+  <!-- <div id="container"> -->
     <div id="wrapper">
+      <div id="myModal" class="modalDialog">
+       	<div id="chooseXO" class="text-center">
+           <h3>Select</h3>
+             <input type="button" class="btn btn-default" id="xbutton" value="X"/>
+
+             <span>or</span>
+             <input type="button" class="btn btn-default" id="obutton" value="O"/>
+         </div>
+
+     </div>
       <table id="board">
         <tr>
           <td>
-            <div class="space" id="space1">
-              <!-- <div id="space1"></div> -->
-            </div>
+            <div class="space" id="space1"></div>
           </td>
           <td>
-            <div class="space" id="space2">
-              <!-- <div id="space2"></div> -->
-            </div>
+            <div class="space" id="space2"></div>
           </td>
           <td>
-            <div class="space" id="space3">
-              <!-- <div id="space3"></div> -->
-            </div>
+            <div class="space" id="space3"></div>
           </td>
          </tr>
         <tr>
           <td>
-            <div class="space" id="space4">
-              <!-- <div id="space4"></div> -->
-            </div>
+            <div class="space" id="space4"></div>
           </td>
           <td>
-            <div class="space" id="space5">
-              <!-- <div id="space5"></div> -->
-            </div>
+            <div class="space" id="space5"></div>
           </td>
           <td>
-            <div class="space" id="space6">
-              <!-- <div id="space6"></div> -->
-            </div>
+            <div class="space" id="space6"></div>
           </td>
          </tr>
         <tr>
           <td>
-            <div class="space" id="space7">
-              <!-- <div id="space7"></div> -->
-            </div>
+            <div class="space" id="space7"></div>
           </td>
           <td>
-            <div class="space" id="space8">
-              <!-- <div id="space8"></div> -->
-            </div>
+            <div class="space" id="space8"></div>
           </td>
           <td>
-            <div class="space" id="space9">
-              <!-- <div id="space9"></div> -->
-            </div>
-            </td>
+            <div class="space" id="space9"></div>
+          </td>
          </tr>
        </table>
      </div>
-  </div>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="js/script.js"></script>
+   <!-- </div> -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.1.0.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>

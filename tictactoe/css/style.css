@@ -1,152 +1,37 @@
-/*.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}*/
-
-
-/*#game{
-  background-color: yellow;
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 7%;
-}*/
-
-/*#grid {
-  position: relative;
-  background-color: red;
-}*/
-
-/*#test{
-  z-index: -10;
-  background: red;
-}*/
-
-input{
-  text-align: center;
-  /*padding-left: 20px;
-
-  padding-right: 20px;*/
-}
-
-/*.row-Centered {
-
-  text-align: center;
-
-}*/
-
-
-/*.col-Centered {
-  display: inline-block;
-  float: none;
-  margin: 0 auto;
-  text-align: left;
-  vertical-align: middle;
-  //margin-right:-4px;
-}*/
-
-.modal{
-  display: block;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-
-}
-
-/*.innerGrid {
-  border-left-style: solid;
-  border-color: black;
-}*/
-
-/*
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: #BCED91;
-}*/
-
 body {
   display: flex;
+  min-width: 375px;
   align-items: center;
   margin-top: 2.5%;
-  background-color: #BCED91;
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: #BCED91;
 }
-
-.space {
-  /*position: absolute;
-  z-index: 40;
-  top: 10px;
-  left: 55px;*/
-  /*width: 100%;*/
-  /*background-color: red;*/
-  position: absolute;
-  text-align: center;
-  line-height: 90px;
-  top: 30px;
-  left: 15px;
-  height: 100px;
-  width: 80%;
-  background-color: transparent;
-}
-
-#space1{
-  /*background-color: green;*/
-  /*position: relative;*/
-  /*position: absolute;
-  text-align: center;
-  line-height: 90px;
-  top: 30px;
-  left: 15px;
-  height: 100px;
-  width: 80%;*/
-  /*z-index: 500;*/
-  /*background-color: red;*/
-}
-
-/*#space2 {
-  position: relative;
-  width: 100%;
-  background-color: red;
-  z-index: 501;
-}*/
 
 #wrapper {
   /*display: flex;
   align-items: center;*/
-  /*position: relative;*/
   width: 500px;
   margin: 0 auto;
-  /*background-color: blue;*/
 }
 
 table {
-  position: relative;
-  /*z-index: -500;*/
+  z-index: -50;
   width: 100%;
-  border-collapse: collapse !important;
-  z-index: 100;
+  border-collapse: collapse;
 }
 td {
-  background-clip: padding-box;
   position: relative;
-  font-size: 80px;
+  /*vertical-align: middle;*/
   width: 33.333%;
-  border: 6px solid #222 !important;
+  border: 6px solid #222;
   background-color: lightgray;
-  z-index: 200;
+  /*height: 150px;*/
 }
 td::after {
-  position: relative;
   content: '';
   display: block;
-  margin-top: 100%;
-  z-index: 300;
+  /*margin-top: 100%;*/
+  padding-bottom: 100%;
 }
 td {
   border: 6px solid #222 !important;
@@ -166,12 +51,21 @@ tr:nth-of-type(3) td {
   border-bottom-color: transparent !important;
 }
 
+.space {
+  position: absolute;
+  /*background-color: purple;*/
+  left: 20%;
+  top: 15%;
+  width: 65%;
+  height: 65%;
 
-/*#firstRow{
-  padding-bottom: 10px;
-
-  border-bottom: 4px solid black;
-}*/
+ text-align: center;
+  /*padding-top: 25%;*/
+  /*line-height: -500%;*/
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 90px;
+}
 
 #myModal{
   display: block;
@@ -187,10 +81,10 @@ tr:nth-of-type(3) td {
 }
 
 #chooseXO {
-  margin: 0 auto;
+  margin: 5% auto;
   position: relative;
   background-color: #BCED91;
-  width: 500px;
+  width: 40%;
   padding-top: 50px;
   padding-bottom: 75px;
 
@@ -211,29 +105,45 @@ tr:nth-of-type(3) td {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width:480px) {
+  /*#wrapper {
+  }
+  #streams {
+    width: 100%;
+  }*/
 
-/*#topLeftSpace{
-  border-right: 6px solid black;
-}*/
-/*
-.space{
-  display: block;
-  position: relative;
-  background: gray;
-  max-width: 200px;
-  height: 175px;
-  line-height: 125px;
-  text-align: center;
-  vertical-align: bottom;
-  font-size: 80px;
-  border: 5px solid #000;
+  /*.space {
+    padding-top: 16% !important;
+  }*/
 
+  #chooseXO {
+    width: 60% !important;
 
-}*/
+  }
 
+  #chooseXO input {
+    padding: 10px !important;
+  }
 
-/*.row{
-  padding-top: 0px;
-  margin: 0 auto;
+  .space {
+    font-size: 70px;
+  }
+}
 
-}*/
+@media screen and (max-width:525px) {
+  /*.space {
+    padding-top: 21%;
+  }*/
+}
+
+@media screen and (max-width:640px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:1200px) {
+
+}
