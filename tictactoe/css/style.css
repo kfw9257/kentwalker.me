@@ -121,10 +121,6 @@ tr:nth-of-type(3) td {
 
   }
 
-  #chooseXO input {
-    padding: 10px !important;
-  }
-
   .space {
     font-size: 70px;
   }
