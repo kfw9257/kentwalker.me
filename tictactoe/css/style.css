@@ -1,6 +1,6 @@
 body {
   display: flex;
-  min-width: 375px;
+  /*min-width: 375px;*/
   align-items: center;
   margin-top: 2.5%;
   font-family: Arial, Helvetica, sans-serif;
