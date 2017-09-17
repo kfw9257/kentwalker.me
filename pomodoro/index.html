@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <meta name="description" content="Pomodoro Timer">
+  <meta name="author" content="Kent Walker">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+     <h1 class="text-center">Pomodoro Timer</h1>
+       <div id="wrapper">
+           <!-- <div class="row">
+             <div class="col-xs-2 col-xs-offset-2" id="leftControls">
+              <h2 id="sessionLabel">Session</h2>
+              <input type="button" value="+" id="sessionIncBtn" />
+               <input type="text" id="sessionLength" value="25" size="1" readonly />
+               <input type="button" value="-" id="sessionDecBtn" />
+             </div>
+             <div class="col-xs-2 col-xs-offset-4" id="rightControls">
+               <h2 id="breakLabel">Break</h2>
+               <input type="button" value="+" id="breakIncBtn"/>
+               <input type="text" id="breakLength" size="1" value="5" readonly />
+               <input type="button" value="-" id="breakDecBtn" />
+         </div>
+       </div> -->
+    <div id="sessionControl">
+      <h2 id="sessionLabel">Session</h2>
+       <input type="button" value="+" id="sessionIncBtn" class="myButtons"/>
+       <input type="text" id="sessionLength" value="25" size="1" readonly />
+       <input type="button" value="-" id="sessionDecBtn" class="myButtons" />
+    </div>
+    <div id="breakControl">
+      <h2 id="breakLabel">Break</h2>
+      <input type="button" value="+" id="breakIncBtn"  class="myButtons"/>
+      <input type="text" id="breakLength" size="1" value="5" readonly />
+      <input type="button" value="-" id="breakDecBtn"  class="myButtons" />
+    </div>
+    <div id="clock">
+      <h2 class="text-center" id="beginMsg">Click To Begin</h2>
+       <div id ="sessionTime">
+         <div id="displayMin"></div>
+         <div id="displaySec"></div>
+      </div>
+    </div>
+    <div id="reset">
+      <input type="button" value="Reset" id="resetBtn" />
+    </div>
+  </div>
+  </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/script.js"></script>
+</html>

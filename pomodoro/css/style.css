@@ -1,0 +1,259 @@
+body{
+  /*background: black;*/
+  background-color: #0F2E5A;
+  font-family: 'Play', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid{
+  padding: 0;
+
+}
+
+h1{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 60px;
+
+  margin-bottom: 30px;
+  color: white;
+}
+
+h2 {
+  position: relative !important;
+  display: block;
+}
+
+.row {
+  /*position: relative;*/
+  /*background-color: green;*/
+}
+
+#sessionLabel {
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #F36A24;
+  top: -40%;
+  left: 10%;
+}
+
+#breakLabel {
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  top: -40%;
+  left: 12%;
+  color: #F36A24;
+}
+
+#wrapper {
+ /*padding: 0;
+ margin: 0;
+ width: 100%;*/
+  padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: red;*/
+}
+#sessionControl {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /*background-color: green;*/
+  width: 130px;
+  /*margin-left: 24%;*/
+  display: inline-block;
+}
+
+#breakControl {
+  position: absolute;
+  top: 0%;
+  /*left: 82%;*/
+  right: 0%;
+  /*background-color: purple;*/
+  width: 130px;
+  /*margin-left: 30%;*/
+  display: inline-block;
+}
+
+#beginMsg{
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 90px;
+  color: #0F2E5A;
+  margin-top: 0;
+}
+
+input{
+  font-size: 35px;
+  color: white;
+  background-color: inherit;
+  text-align: center;
+  border: none;
+}
+
+
+
+#displayMin,#displaySec,#colon{
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 60px;
+  background: transparent;
+
+
+}
+
+
+
+.myButtons {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: #F36A24;
+  background: #0F2E5A;
+  border: none;
+  /*padding: 1px 5px 1px;*/
+  /*padding-top: 5px;*/
+  /*background-color: white;*/
+  /*margin-bottom: 5px;*/
+  /*max-width: 100%;*/
+  /*height: auto;*/
+}
+
+input[type="button"] {
+  border: none;
+  outline: none;
+}
+
+
+#clock{
+  /*position: absolute;*/
+  position: relative;
+  height: 320px;
+  width: 320px;
+  margin: 0 auto;
+
+  /*z-index: -50;*/
+  /*left: 32%;*/
+  background-color: #F36A24;
+  border-radius: 250px;
+
+}
+
+#sessionTime{
+  position: relative;
+  background-color: purple;
+  /*z-index: 1000;*/
+  /*left: 18%;
+  top: 40%;*/
+}
+
+
+#displayMin {
+  color: white;
+  position: absolute;
+  /*background-color: yellow;*/
+  /*top: -5%;*/
+  left: 25%;
+  /*height: 75px;*/
+  width: 70px;
+}
+
+#displaySec {
+  color: white;
+  position: absolute;
+  /*background-color: red;*/
+  left: 48%;
+  /*height: 75px;*/
+  width: 90px;
+}
+
+
+
+#controls{
+  display: block;
+  font-size: 27px;
+  /*position: relative;*/
+  /*top: 250px;*/
+
+}
+
+#leftControls {
+  width: 200px;
+  background-color: purple;
+  padding-top: 20px;
+  /*margin: 0 auto;*/
+}
+
+#rightControls {
+  width: 200px;
+  background-color: yellow;
+  padding-top: 20px;
+  /*height: 120px;*/
+}
+
+#reset{
+  /*position: absolute;
+  top: 620px;*/
+  /*left: 48%;*/
+  width: 300px;
+  /*background-color: green;*/
+  margin: 5% auto;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#reset input{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  margin: 0 auto;
+  background: #0F2E5A;
+  border: none;
+}
+
+/* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+      #wrapper {
+        width: 100% !important;
+      }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+      #wrapper {
+        padding-top: 150px !important;
+        width: 90%;
+      }
+
+      #reset {
+        margin: 6% auto;
+      }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+      #wrapper {
+        padding-top: 100px;
+      }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    
+    }
