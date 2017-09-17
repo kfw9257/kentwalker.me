@@ -25,7 +25,14 @@ document.getElementById("sessionIncBtn").addEventListener("click", function(){
 
 
   $("#sessionLength").val(session);
-  $("#displayMin").text(session);
+
+  if(session < 10){
+    $("#displayMin").text("0" + session);
+  }else {
+    $("#displayMin").text(session);
+  }
+
+  // $("#displayMin").text(session);
 
   }else{
 
@@ -33,7 +40,12 @@ document.getElementById("sessionIncBtn").addEventListener("click", function(){
     paused = false;
     session += 1;
     $("#sessionLength").val(session);
-    $("#displayMin").text(session);
+    // if(session < 10){
+    //   $("#displayMin").text(" " + session);
+    // }else {
+    //   $("#displayMin").text(session);
+    // }
+
     $("#displaySec").text(":00");
     clockStarted = false;
     $("#beginMsg").text("Click To Start");;
@@ -49,13 +61,18 @@ document.getElementById("sessionDecBtn").addEventListener("click", function(){
 
     session -= 1;
     $("#sessionLength").val(session);
-    $("#displayMin").text(session);
+    // $("#displayMin").text(session);
+    if(session < 10){
+      $("#displayMin").text("0" + session);
+    }else {
+      $("#displayMin").text(session);
+    }
 
   }else if(session == 1 && clockStarted == false){
 
     session = 1;
     $("#sessionLength").val(session);
-   $("#displayMin").text(session);
+   $("#displayMin").text("0" + session);
 
   }else if(session == 1 && clockStarted == true){
     window.clearInterval(pomTimerId);
