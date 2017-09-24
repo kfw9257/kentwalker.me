@@ -4,6 +4,10 @@ var results = $("#results").html;
 
   var search = "";
 
+  $(".btn").on("mouseup", function(){
+    $(this).blur();
+  });
+
 $("#searchButton").on("click",function(){
 
  search = document.getElementById("searchTxt").value;
