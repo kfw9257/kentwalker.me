@@ -178,7 +178,7 @@ a:hover {
     color: rgb(254,254,254);
   }
 
-  #randomButton:hover, {
+  #randomButton:hover {
     background-color: rgb(29,80,133);
     color: rgb(254,254,254);
   }
