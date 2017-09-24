@@ -24,7 +24,8 @@ html {
 }
 body {
     height: 100%;
-    background-image: url('file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/wikiapp/images/universe.jpg');
+    /*background-image: url('file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/wikiapp/images/universe.jpg');*/
+    background-image: url('images/universe.jpg');
     background-position: center;
     background-repeat: no-repeat;
      background-attachment: fixed;
