@@ -16,7 +16,7 @@ $("#searchButton").on("click",function(){
 
   if(search == "")
   {
-    alert("You need to input a search word or phrase.");
+    // alert("You need to input a search word or phrase.");
   }
   else
   {
