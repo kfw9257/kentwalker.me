@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the Wikiverse</title>
+  <meta name="description" content="Wikipedia API Application">
+  <meta name="author" content="Kent Walker">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+   <div id="bg">
+      <!-- <img src="https://i3.imgpile.com/2016/09/25/c9d2fe3f1fc4bf336663d58133b8bde5.jpg" alt="the universe with a person's silhouette in the foreground"> -->
+    </div>
+      <div id="content">
+        <div class="text-center">
+          <h1>search the wiki-verse</h1>
+        </div>
+        <form autocomplete="on">
+          <div class="text-center">
+            <input type="text" name="searchText" id="searchTxt">
+          </div>
+        <!-- <div class="row topBuffer">
+          <div class="col-xs-1  col-xs-offset-3">
+            <button type="button" class="btn btn-default btn-lg" id="searchButton">Search</button>
+          </div>
+          <div class="col-xs-1  col-xs-offset-1">
+            <button type="button" id="randomButton" class="btn btn-default btn-lg" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')">Random Wiki</button>
+        </div>
+       </div> -->
+        <div id="buttonDiv">
+          <!-- <div id="wrapper"> -->
+            <button type="button" class="btn btn-default btn-lg" id="searchButton">Search</button>
+            <button type="button" id="randomButton" class="btn btn-default btn-lg" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')">Random Wiki</button>
+          <!-- </div> -->
+        </div>
+        </form>
+        <br />
+        <div class="resultBuffer" id="results">
+
+        </div>
+   </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

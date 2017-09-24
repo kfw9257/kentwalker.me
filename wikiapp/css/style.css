@@ -1,0 +1,206 @@
+#bg {
+/*
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;*/
+  /* The image used */
+
+    /*width: 200px;
+    height: 200px;*/
+    /*width: 100%;*/
+    /* Full height */
+    /*height: 100%;*/
+    /*background-color: green;*/
+    /* Center and scale the image nicely */
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;*/
+}
+html {
+  height: 100%;
+}
+body {
+    height: 100%;
+    background-image: url('file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/wikiapp/images/universe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+    display: table;
+    margin: 0 auto;
+}
+
+/*html {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html {
+  background: url('file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/wikiapp/images/universe.jpg');
+}*/
+
+/*body {
+  background-image: url("universe.jpg");
+  background-repeat: no-repeat;
+}*/
+
+/*body, html {
+    height: 100%;
+}*/
+/*html {
+background: url(images/universe.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.container-fluid {
+  /*position: relative;*/
+  height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1{
+  color: rgb(254,254,254);
+  text-shadow: 1px 1px 8px rgb(255,247,178);
+
+}
+
+.btn{
+
+  background-color: rgb(29,80,133);
+  color: rgb(254,254,254);
+}
+
+/*#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}*/
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.result{
+  background: rgba(183,255,254,0.5);
+  color: black;
+  padding: 10px;
+   border-radius: 5px;
+}
+
+.result:hover{
+  border-style: solid;
+  border-width: medium;
+  border-color: rgb(254,254,254);
+}
+
+#searchTxt{
+  width: 60%;
+   border-radius: 4px;
+}
+
+
+
+.topBuffer{
+  margin-top: 25px;
+}
+
+#content{
+  /*background-color: orange;*/
+   /*position: absolute;*/
+  position: relative;
+  /*transform: translate(32%, 0%);*/
+  width: 600px;
+  /*margin: 20% auto;*/
+}
+
+#searchButton {
+  display: inline-block;
+  /*position: absolute;
+  left: 30%;*/
+}
+
+#randomButton {
+  display: inline-block;
+  /*position: absolute;*/
+}
+
+#buttonDiv {
+  /*background-color: red;*/
+  width: 238px;
+  /*width: 41%;*/
+  margin: 3% auto;
+}
+
+/*#wrapper {
+  wid
+  margin: 0 auto;
+}*/
+
+#results{
+  margin-top: 10px;
+}
+
+@media screen and (max-width:480px) {
+  #content{
+    width: 325px !important;
+    /*overflow-y: scroll;*/
+  }
+
+  #searchTxt {
+    width: 100%;
+  }
+
+  #body {
+    /*overflow-y: scroll;*/
+  }
+}
+
+@media screen and (max-width:530px) {
+  #content {
+    width: 375px;
+  }
+}
+
+
+@media screen and (max-width:640px) {
+  #content{
+    width: 500px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+    /*#content{
+      width: 80%;
+    }*/
+}
+
+@media screen and (max-width:992px) {
+  /*#content{
+    width: 70%;
+  }*/
+  #searchTxt {
+
+  }
+}
+
+@media screen and (max-width:1200px) {
+
+}
