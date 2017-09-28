@@ -25,6 +25,7 @@ td {
   width: 33.333%;
   border: 6px solid #222;
   background-color: lightgray;
+  background-clip: padding-box;
   /*height: 150px;*/
 }
 td::after {
