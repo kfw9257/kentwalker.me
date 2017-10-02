@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Russo+One|Montserrat" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="description" content="The Classic Memory Game built by startfastcode.com students">
+	<meta name="keywords" content="memory game freecodecamp startfast startfastcode webdev frontend">
+	<title>Play Simon!</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="game">
+		<div id="center-control">
+				<h1 class="text-center"><span class="simon-logo">Simon</span><span class="r-symbol"><sup> &#174;</sup></span></h1>
+					<div id="strict-LED"></div>
+					<div id="control-row">
+							<div id="count-div">
+									<span id="count-box">
+
+									</span>
+								</div>
+								<div id="start-button"></div>
+								<div id="strict-button"></div>
+							</div>
+							<div id="button-labels-row">
+								<span>COUNT</span>
+								<span>START</span>
+								<span>STRICT</span>
+							</div>
+				<div id="on-off-label">
+					<span class="pull-left">OFF</span>
+						<label class="switch pull-left">
+						  <input type="checkbox" id="on-off-slider">
+						  	<div class="slider"></div>
+						</label>
+						<span class="pull-left">ON</span>
+						</div>
+				</div>
+				<div id="topRow">
+						<div id="green-button" class="color-button"></div>
+						<div id="red-button" class="color-button"></div>
+				</div>
+		   <div id="bottomRow">
+				<div id="yellow-button" class="color-button bottom-button"></div>
+				<div id="blue-button" class="color-button bottom-button"></div>
+			</div>
+		</div>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
