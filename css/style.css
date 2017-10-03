@@ -446,14 +446,14 @@ h2 {
 footer {
   position: relative;
   border-top: solid 0.625em white;
-  height: 5em;
+  height: 95px;
   background-color: black;
   /*text-align: center;*/
 }
 
 footer * {
   font-weight: bold;
-  margin-top: 4px;
+  margin-top: 6px;
   display: inline-block;
   color: white;
 
