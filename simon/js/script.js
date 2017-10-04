@@ -303,7 +303,7 @@ $(document).ready(function() {
      });
     // var audio = new Audio("../sounds/blueSound.mp3");
     // var audio = new Audio("file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/simon/sounds/" + buttonColor + "Sound.mp3");
-    var audio = new Audio("../sounds/" + buttonColor + "Sound.mp3");
+    var audio = new Audio("sounds/" + buttonColor + "Sound.mp3");
     audio.play();
  }
 
@@ -342,7 +342,7 @@ $(document).ready(function() {
 
  function wrongButton() {
   //  var audio = new Audio("file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/simon/sounds/fail.mp3");
-   var audio = new Audio("../sounds/fail.mp3");
+   var audio = new Audio("sounds/fail.mp3");
    audio.play();
    $("#count-box").html("! !");
    setTimeout(function(){
@@ -358,7 +358,7 @@ $(document).ready(function() {
 
         playerWon = true;
         $("#winModal").css("display","block");
-        var audio = new Audio("../sounds/win.mp3");
+        var audio = new Audio("sounds/win.mp3");
 
     }
  }
