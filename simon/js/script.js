@@ -75,13 +75,10 @@ $(document).ready(function() {
         count += 1;
         $("#count-box").html(count);
         playerTurn = false;
-        // breakTimer = setTimeout(function() {
-        //   computerTurn();
-        // }, 2000);
 
         setTimeout(function() {
           computerTurn();
-        }, 2000);
+        }, 1000);
 
     }
 
@@ -91,7 +88,7 @@ $(document).ready(function() {
        currentIndex = 0;
        setTimeout(function() {
          animateButtonChain();
-       }, 2000);
+       }, 1000);
 
    }else if(gameStarted == true && playerTurn == true && strictEnabled == true && buttonArray[0] != buttonHistoryArr[currentIndex]){
 
@@ -102,7 +99,7 @@ $(document).ready(function() {
        buttonHistoryArr = [];
        setTimeout(function() {
          computerTurn();
-       }, 2000);
+       }, 1000);
    }
  });
 
@@ -123,7 +120,7 @@ $(document).ready(function() {
          playerTurn = false;
         setTimeout(function() {
           computerTurn();
-        }, 2000);
+        }, 1000);
       }
 
     }else if(gameStarted == true && playerTurn == true && strictEnabled == false && buttonArray[1] != buttonHistoryArr[currentIndex]){
@@ -133,7 +130,7 @@ $(document).ready(function() {
        currentIndex = 0;
        setTimeout(function() {
          animateButtonChain();
-       }, 2000);
+       }, 1000);
 
      }else if(gameStarted == true && playerTurn == true && strictEnabled == true && buttonArray[1] != buttonHistoryArr[currentIndex]){
 
@@ -144,7 +141,7 @@ $(document).ready(function() {
        buttonHistoryArr = [];
        setTimeout(function() {
          computerTurn();
-       }, 2000);
+       }, 1000);
    }
  });
 
@@ -166,7 +163,7 @@ $(document).ready(function() {
         playerTurn = false;
         setTimeout(function() {
           computerTurn();
-        }, 2000);
+        }, 1000);
       }
 
    }else if(gameStarted == true && playerTurn == true && strictEnabled == false && buttonArray[2] != buttonHistoryArr[currentIndex]){
@@ -175,7 +172,7 @@ $(document).ready(function() {
        currentIndex = 0;
        setTimeout(function() {
          animateButtonChain();
-       }, 2000);
+       }, 1000);
 
    }else if(gameStarted == true && playerTurn == true && strictEnabled == true && buttonArray[2] != buttonHistoryArr[currentIndex]){
 
@@ -186,7 +183,7 @@ $(document).ready(function() {
        buttonHistoryArr = [];
        setTimeout(function() {
          computerTurn();
-       }, 2000);
+       }, 1000);
    }
  });
 
@@ -207,7 +204,7 @@ $(document).ready(function() {
         playerTurn = false;
         setTimeout(function() {
           computerTurn();
-        }, 2000);
+        }, 1000);
       }
 
    }else if(gameStarted == true && playerTurn == true && strictEnabled == false && buttonArray[3] != buttonHistoryArr[currentIndex]){
@@ -216,7 +213,7 @@ $(document).ready(function() {
        currentIndex = 0;
        setTimeout(function() {
          animateButtonChain();
-       }, 2000);
+       }, 1000);
 
    }else if(gameStarted == true && playerTurn == true && strictEnabled == true && buttonArray[3] != buttonHistoryArr[currentIndex]){
 
@@ -227,7 +224,7 @@ $(document).ready(function() {
        buttonHistoryArr = [];
        setTimeout(function() {
          computerTurn();
-       }, 2000);
+       }, 1000);
 
    }
  });
@@ -235,14 +232,10 @@ $(document).ready(function() {
  $("#winButton").on("click", function(){
 
        buttonHistoryArr = [];
-      //  count = 1;
-
        currentIndex = 0;
        $("#winModal").css("display","none");
        resetGame();
-      //  setTimeout(function() {
-      //    resetGame();
-      //  }, 500);
+
  });
 
 
@@ -256,8 +249,7 @@ $(document).ready(function() {
  }
 
  function computerTurn(){
-      // clearTimeout(breakTimer);
-      // playerTurn = false;
+
       if(playerTurn == false && playerWon == false){
         currentIndex = 0;
         var randomNum = Math.floor(getRandom(0,4));
@@ -292,17 +284,13 @@ $(document).ready(function() {
  }
 
  function animateSingleButton(btn){
-  //  $("#" + btn).fadeOut(100);
-  //  $("#" + btn).fadeIn(500);
-     var buttonColor = btn.substring(0, btn.indexOf('-'));
 
+     var buttonColor = btn.substring(0, btn.indexOf('-'));
      $("#" + btn).fadeTo("slow", 0.5, function(){
-      //  console.log("fade done");
       $( this ).css("opacity","1.0");
-      // $( this ).fadeIn(500);
+
      });
-    // var audio = new Audio("../sounds/blueSound.mp3");
-    // var audio = new Audio("file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/simon/sounds/" + buttonColor + "Sound.mp3");
+
     var audio = new Audio("sounds/" + buttonColor + "Sound.mp3");
     audio.play();
  }
@@ -313,7 +301,6 @@ $(document).ready(function() {
     buttonHistoryArr.forEach(function(color, index){
         setTimeout(function(){
             animateSingleButton(color);
-            // console.log("Animate 2");
         },
         1000 * index);
     })
@@ -323,12 +310,6 @@ $(document).ready(function() {
    displaySequence();
  }
 
- // function buttonDelay(){
- //
- //   setTimeout(function(){animateButtonChain();}, 2000);
- //
- // }
- //
  function resetGame(){
 
      count = 1;
@@ -341,7 +322,7 @@ $(document).ready(function() {
  }
 
  function wrongButton() {
-  //  var audio = new Audio("file:///C:/Users/kfw92_000/Desktop/website_projects/kentwalker.me/simon/sounds/fail.mp3");
+
    var audio = new Audio("sounds/fail.mp3");
    audio.play();
    $("#count-box").html("! !");
@@ -352,14 +333,11 @@ $(document).ready(function() {
 
  function checkForWin(){
     if(count == 20){
-        // alert("Win!");
-        // $("#count-box").css("text-align", "left");
-        // $("#count-box").html("WIN");
 
         playerWon = true;
         $("#winModal").css("display","block");
-        var audio = new Audio("sounds/win.mp3");
-
+         var audio = new Audio("sounds/win.mp3");
+         audio.play();
     }
  }
 

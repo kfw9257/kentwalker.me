@@ -300,11 +300,11 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 480px) {
     #game {
-      -ms-transform: scale(0.5, 0.5) !important; /* IE 9 */
-      -webkit-transform: scale(0.5, 0.5) !important; /* Safari */
-      transform: scale(0.5, 0.5) !important;
+      -ms-transform: scale(0.6, 0.6) !important; /* IE 9 */
+      -webkit-transform: scale(0.6, 0.6) !important; /* Safari */
+      transform: scale(0.6, 0.6) !important;
       left: -100px !important;
-      top: -100px !important;
+      top: -50px !important;
     }
 
 
