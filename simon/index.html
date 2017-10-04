@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="The Classic Memory Game built by startfastcode.com students">
 	<meta name="keywords" content="memory game freecodecamp startfast startfastcode webdev frontend">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Play Simon!</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -13,8 +14,14 @@
 </head>
 <body>
 	<div id="game">
+		<div id="winModal" class="modalDialog">
+       	<div id="winnerMsg" class="text-center">
+           <h1>YOU WON!!!</h1>
+             <input type="button" class="btn btn-default" id="winButton" value="OK"/>
+         </div>
+     </div>
 		<div id="center-control">
-				<h1 class="text-center"><span class="simon-logo">Simon</span><span class="r-symbol"><sup> &#174;</sup></span></h1>
+				<h1 class="text-center"><span id="simon-logo">Simon</span><span class="r-symbol"><sup> &#174;</sup></span></h1>
 					<div id="strict-LED"></div>
 					<div id="control-row">
 							<div id="count-div">

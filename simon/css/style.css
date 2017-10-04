@@ -8,17 +8,54 @@ html, body {
   background-image: url('https://i2.imgpile.com/2016/09/11/201cf963325fe8ed08e87cfc479bccf0.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
-h1 {
+#winModal{
+  /*display: block;*/
+  display: none;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+
+}
+
+#winnerMsg {
+  /*display: none;*/
+  margin: 10% auto;
+  position: relative;
+  color: black;
+  /*font-size: 35px;*/
+  border: 5px solid black;
+  font-family: 'Russo One',sans-serif;
+  text-shadow: 0 0 10px black;
+  /*background-color: #FF7F00;*/
+  background-color: yellow;
+  width: 40%;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+#winnerMsg input {
+  font-size: 26px;
+  margin-top: 10%;
+}
+
+/*h1 {
 	text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-}
+}*/
 
-.simon-logo {
+#simon-logo {
   font-size: 45px;
   font-weight: 800;
   margin-top: 12%;
   font-family: 'Russo One',sans-serif;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .r-symbol {
   font-weight: 700;
@@ -249,7 +286,7 @@ input:checked + .slider:before {
 	width: 555px;
   /*top: 5%;
 	left: 27%;*/
-  margin: 1% auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
