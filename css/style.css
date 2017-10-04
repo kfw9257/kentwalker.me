@@ -153,39 +153,11 @@ nav ul li a:hover
 }
 
 #collapsibleMenu {
-  /*z-index: 12;*/
   height: 100px;
-  /*top: -15px;*/
-  /*left: 9%;*/
-  /*position: relative;*/
   width: 100%;
-  /*display: none;*/
-  /*width: 100%;*/
-  /*width: 100%;*/
-  /*margin: 0 auto;*/
-  /*display: block;*/
   background-color: red;
-  /*opacity: 0.9;*/
-}
-/*
-#collapsibleMenu ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-#collapsibleMenu ul li a:hover {
-
-  background-color: #FFC273;
-}
-
-#collapsibleMenu ul li {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}*/
 
 #menuContainer {
   z-index: 200;
@@ -270,10 +242,6 @@ h2 {
   background-color: #FFC273;
 }
 
-/*.test {
-  padding: 0;
-  margin: 0;
-}*/
 
 .image-link img {
       width: 100%;
@@ -291,10 +259,6 @@ h2 {
 
 
 
-/*#allContent {
-  background-color: green;
-}*/
-
 .workItem {
   position: relative;
   background-color: #FFC273;
@@ -303,12 +267,6 @@ h2 {
   height: auto;
 }
 
-/*.img-fluid {
-  /*display: inline-block;*/
-  /*min-width: 200px;
-  max-width: 100%;
-  height: auto;
-}*/
 
 
 .content-row {
@@ -342,9 +300,10 @@ h2 {
 
 #aboutText p  {
     display: inline;
-    background-color: #FFC273;
+    font-size: 18px;
+    /*background-color: #FFC273;*/
     /*box-shadow: 1em 0 0 #FFC273, -1em 0 0 #FFC273;*/
-    padding: 7px 8px;
+    /*padding: 7px 8px;*/
     /*box-decoration-break: clone;*/
     font-weight: 700;
 
@@ -363,14 +322,6 @@ h2 {
 #about h2 {
   display: inline-block;
 }
-
-/*#aboutmetxt {
-  padding: 2%;
-  position: absolute;
-  margin-top: 150px;
-  font-size: 1.25em;
-  font-weight: bold;
-}*/
 
 #skills {
   position: relative;
