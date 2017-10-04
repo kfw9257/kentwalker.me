@@ -303,7 +303,7 @@ input:checked + .slider:before {
       -ms-transform: scale(0.6, 0.6) !important; /* IE 9 */
       -webkit-transform: scale(0.6, 0.6) !important; /* Safari */
       transform: scale(0.6, 0.6) !important;
-      left: -100px !important;
+      left: -95px !important;
       top: -50px !important;
     }
 
