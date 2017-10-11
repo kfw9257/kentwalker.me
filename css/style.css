@@ -20,7 +20,7 @@ body {
 
 
 #sitelogo {
-  padding-top: 1%;
+  padding-top: 2.5%;
   /*
   padding-right: 10px;
   width: 400px;*/
@@ -53,21 +53,6 @@ nav ul li {
   padding-bottom: 5px;
 
 }
-
-/*.adjLeft {
-  padding-left: 30px;
-}
-
-.adjRight {
-  padding-left: 15px;
-  text-align: right;
-}
-
-.adjCenter {
-  margin-left: 25px;
-  margin-right: 10px;
-  text-align: center;
-}*/
 
 nav ul li a {
   color: white;
