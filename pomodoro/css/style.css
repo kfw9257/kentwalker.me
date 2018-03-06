@@ -16,7 +16,7 @@ h1{
   font-weight: bold;
   font-size: 60px;
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -25,10 +25,6 @@ h2 {
   display: block;
 }
 
-.row {
-  /*position: relative;*/
-  /*background-color: green;*/
-}
 
 #sessionLabel {
   position: absolute;
