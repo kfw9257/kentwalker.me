@@ -17,8 +17,6 @@ body {
 
 }
 
-
-
 #sitelogo {
   padding-top: 2.5%;
   /*
@@ -539,6 +537,13 @@ footer ul li a:link {
     display: inline-block;
   }
 
+  #siteTitle p:nth-child(1) {
+    left: 3%;
+  }
+
+  #siteTitle p:nth-child(2) {
+    left: 10%;
+  }
 }
 
 @media screen and (max-width:645px) {
