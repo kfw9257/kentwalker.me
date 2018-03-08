@@ -50,6 +50,7 @@ body {
   font-size: 25px;
   position: absolute;
   font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
   top: 87%;
   left: 13%;
   color: rgb(255, 236, 139);
@@ -540,16 +541,16 @@ footer ul li a:link {
   }
 
   #siteTitle p:nth-child(1) {
-    font-size: 70px;
+    font-size: 55px;
     left: 3%;
   }
 
   #siteTitle p:nth-child(2) {
-    left: 10%;
+    left: 7%;
   }
 
   #sitelogo {
-    width: 400px;
+    width: 375px;
   }
 }
 
