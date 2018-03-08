@@ -540,6 +540,7 @@ footer ul li a:link {
   }
 
   #siteTitle p:nth-child(1) {
+    font-size: 70px;
     left: 3%;
   }
 
@@ -548,7 +549,7 @@ footer ul li a:link {
   }
 
   #sitelogo {
-    width: 420px;
+    width: 400px;
   }
 }
 
