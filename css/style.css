@@ -99,10 +99,6 @@ nav ul li a:hover
   top: 20%;
   left: 34%;
   margin-right: 10px;
-  /*background-color: green;*/
-  /*padding-bottom: 10px;
-  float: left;
-  margin-left: 50px;*/
 }
 
 #menuIcon:hover {
@@ -201,14 +197,6 @@ nav ul li a:hover
   padding-bottom: 15px;
 }
 
-.navLinks {
-  /*display: none;*/
-}
-/*#mobileMenu {
-  background-color: red;
-    width: 100px;
-}*/
-
 h1 {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -231,9 +219,6 @@ h2 {
 }
 
 .image-link {
-  /*min-width: 300px;*/
-  /*max-width: */
-  /*height: auto;*/
   max-width: 100%;
   position: relative;
   background-color: #FFC273;
@@ -249,11 +234,20 @@ h2 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 40%;
   width: 100%;
   display: none;
   opacity: 0;
 }
+
+.vertcenter1 {
+  bottom: 54%;
+}
+
+.vertcenter2 {
+  bottom: 42%;
+}
+
+
 
 .project-info h3 {
       font-family: 'Open Sans', Arial, sans-serif;
