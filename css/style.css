@@ -29,6 +29,8 @@ body {
 }
 
 
+
+
 #siteTitle p:nth-child(1) {
   font-size: 75px;
   font-weight: bolder;
@@ -543,6 +545,10 @@ footer ul li a:link {
 
   #siteTitle p:nth-child(2) {
     left: 10%;
+  }
+
+  #sitelogo {
+    width: 420px;
   }
 }
 
