@@ -547,8 +547,9 @@ footer ul li a:link {
   }
 
   #siteTitle p:nth-child(1) {
-    font-size: 63px;
-    left: 3%;
+    font-size: 60px;
+    top: 64%;
+    left: 5%;
   }
 
   #siteTitle p:nth-child(2) {
