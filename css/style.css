@@ -21,15 +21,21 @@ body {
   padding-top: 2.5%;
   /*
   padding-right: 10px;*/
-  width: 440px;
+  width: 450px;
   margin: 0 auto;
   /* z-index: -100; */
   /* background-color: green; */
   position: relative;
 }
 
+#sitelogo img {
+  /* min-width: 340px; */
+}
 
-
+#wrapper {
+  /* width: 99%; */
+  margin: 0 auto;
+}
 
 #siteTitle p:nth-child(1) {
   font-size: 75px;
@@ -541,17 +547,23 @@ footer ul li a:link {
   }
 
   #siteTitle p:nth-child(1) {
-    font-size: 55px;
+    font-size: 63px;
     left: 3%;
   }
 
   #siteTitle p:nth-child(2) {
-    left: 7%;
+    font-size: 22px;
+    top: 88%;
+    left: 10%;
   }
 
   #sitelogo {
-    width: 350px;
+    width: 370px;
   }
+
+  /* #wrapper {
+    width:
+  } */
 }
 
 @media screen and (max-width:645px) {
