@@ -22,15 +22,27 @@ body {
 #sitelogo {
   padding-top: 2.5%;
   /*
-  padding-right: 10px;
-  width: 400px;*/
+  padding-right: 10px;*/
+  width: 450px;
+  margin: 0 auto;
+  /* z-index: -100; */
+  /* background-color: green; */
 
+}
+
+#sitelogo span {
+  font-size: 72px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  display: inline-block;
+  top: 66%;
+  left: 34.5%;
+  color: white;
 }
 
 nav {
   position: relative;
   background-color: black;
-
   border-bottom-style: solid;
   border-bottom-width: 0.625em;
   border-bottom-color: white;
@@ -232,12 +244,33 @@ h2 {
       width: 100%;
 }
 
+.project-info {
+   position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 40%;
+  width: 100%;
+  display: none;
+  opacity: 0;
+}
+
+.project-info h3 {
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 1.2px;
+  }
+
 #shortcuts {
+
   /*position: relative;*/
   /*padding-left: 65px;*/
-  /*background-color: yellow;*/
-  width: 78%;
+  /* background-color: yellow; */
+  width: 82%;
   /*padding-left: 6%;*/
+  padding-top: 20px;
   margin: 0 auto;
 
 }
@@ -338,7 +371,7 @@ h2 {
   margin-top: 5%;
 }
 
-#contactform * {
+/* #contactform * {
   font-size: 1.125em;
   width: 500px;
   max-width: 90%;
@@ -359,8 +392,16 @@ h2 {
   padding: 5px;
   color: white;
   font-weight: bold;
-  /*width: 75%;*/
+
   margin-top: 20px;
+} */
+
+#contactInfo {
+  /* background-color: yellow; */
+  width: 70%;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  margin: 0px auto;
 }
 
 
@@ -462,13 +503,17 @@ footer ul li a:link {
   margin: 0 auto;
 }
 
+.contactLink {
+  margin-bottom: 10%;
+}
+
 /*  MEDIA QUERIES  */
 
-@media (hover: none) {
+/* @media (hover: none) {
    /*a:link {
       color: red;
-   }*/
-}
+   }
+} */
 
 @media screen and (max-width:480px) {
 
@@ -507,6 +552,9 @@ footer ul li a:link {
     /*left: 38%;*/
   }
 
+  #contactInfo {
+    padding-bottom: 60px;
+  }
 
 }
 
@@ -521,7 +569,7 @@ footer ul li a:link {
   #centerShortcuts{
     padding-left: 0% !important;
     /*width: 80%;*/
-    /*background-color: purple;*/
+    /* background-color: purple; */
   }
 
   #about {

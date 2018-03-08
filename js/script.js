@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // var windowWidth = $(window).width();
-
+//test to see if user has a mobile device. If they do, hide drop down menu
   $(window).resize(function() {
     $screenWidthCheck = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     if ($screenWidthCheck > 480) {
@@ -14,17 +14,24 @@ $(document).ready(function() {
               || navigator.maxTouchPoints > 0
               || navigator.msMaxTouchPoints > 0;
 
+//only use rollover effects on non-touchscreen devices
 
  if(!touch) {
-  // alert("Not a touch device");
+//rollover effects for project items
     $(".image-link").hover(function() {
             $(this).find("img").stop().animate({
               "opacity" : 0.6
-            });
+            }); //animate method end
+            $(this).find(".project-info").show().stop().animate({
+              "opacity" : 1.0,
+            }); //animate method end
           }, function() {
             $(this).find("img").stop().animate({
               "opacity" : 1.0
-            });
+            }); //animate method End
+            $(this).find(".project-info").show().stop().animate({
+              "opacity" : 0,
+            }); //animate method end
           });
 
         }
@@ -39,55 +46,6 @@ $(document).ready(function() {
                 $('#drop').hide();
             });
 
-            // when a link is clicked and 'jumps' to a section of the page the mobile-nav class is removed
-          // navLinks.addEventListener("click", function() {
-          //     navLinks.classList.toggle("mobile-nav");
-          // }, false);
 
-    // }else{
-
-      // alert("Using a touch device");
-      //
-      // $("#menuIcon").on ('touchstart',function (event) {
-      //    event.stopPropagation();
-      //     $('#drop').show();
-          // $("#menuContainer").toggle();
-        // });
-
-      // $("#menuContainer").on ('touchend',function () {
-      //       $("#menuContainer").hide();
-      //       $("#drop").hide();
-      //   });
-
-
-
-    // }
-
-
-// $("#menuIcon").hover(function(){
-//               //console.log("hover in");
-//                $("#menuContainer").show();
-//
-//            }, function() {
-//             //console.log("hover out");
-//              $("#menuContainer").hide();
-//           });
-
-
-  // $("#collapsibleMenu li a").on('touchend click', function () {
-  // //hideMenu();
-  //   // $(this).css("background-color","#FFC273");
-  //   //location.href = this.getAttribute("href");
-  //   $("#collapsibleMenu").hide();
-  // })
-
-  // $("#collapsibleMenu").on("tap",function(){
-  //     $(this).hide();
-  // });
-
-  // function hideMenu() {
-  //   $("#collapsibleMenu").css("display","none");
-  //
-  // }
 
 });

@@ -6,6 +6,7 @@
       <meta name="referrer" content="origin">
       <meta name="google-site-verification" content="VIIXoMHC8gbPI5laIES-vYE52kQ_t8MxAKvMXjCcNns" />
       <link rel="icon" href="images/tabicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -58,7 +59,10 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="image-link">
                       <a href="simon/index.html" target="_blank" class="workItem">
-                        <img class="img-fluid" src="images/simon.jpg" alt="">
+                        <img class="img-fluid" src="images/simon2.png" alt="">
+                         <div class="project-info">
+                           <h3>Simon Game</h3>
+                         </div>
                       </a>
                     </div>
                   </div>
@@ -66,6 +70,9 @@
                     <div class="image-link">
                       <a href="calculator/index.html" target="_blank" class="workItem">
                         <img class="img-fluid" src="images/calculator.jpg" alt="">
+                        <div class="project-info">
+                          <h3>Javascript Calculator</h3>
+                        </div>
                       </a>
                     </div>
                   </div>
@@ -73,13 +80,19 @@
                     <div class="image-link">
                         <a href="tictactoe/index.html" class="workItem">
                           <img class="img-fluid" src="images/tictactoe.PNG" alt="">
+                            <div class="project-info">
+                              <h3>Tic-Tac-Toe Game</h3>
+                            </div>
                         </a>
                       </div>
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="image-link">
                         <a href="pomodoro/index.html" target="_blank"  class="workItem">
-                          <img class="img-fluid" src="images/pomodorro2.png" alt="">
+                          <img class="img-fluid" src="images/pomodorro3.png" alt="">
+                            <div class="project-info">
+                              <h3>Pomodoro Clock</h3>
+                            </div>
                         </a>
                       </div>
                   </div>
@@ -87,6 +100,9 @@
                     <div class="image-link">
                         <a href="wikiapp/index.html" target="_blank"  class="workItem">
                           <img class="img-fluid" src="images/wikiverse.png" alt="">
+                            <div class="project-info">
+                              <h3>Wikipedia Viewer</h3>
+                            </div>
                         </a>
                       </div>
                   </div>
@@ -94,6 +110,9 @@
                     <div class="image-link">
                         <a href="twitchapp/index.html" target="_blank" class="workItem">
                           <img class="img-fluid" src="images/twitch.jpg" alt="">
+                            <div class="project-info">
+                              <h3>Twitch JSON API App</h3>
+                            </div>
                         </a>
                     </div>
                   </div>
@@ -132,17 +151,41 @@
                   </div>
         </div>
       <div id="contact" class="text-center">
-        <h2>CONTACT</h2>
+        <h1>CONTACT</h1>
       </div>
-      <div id="contactform">
-        <form method="POST" action="http://formspree.io/kfw9257@gmail.com">
+      <div id="contactInfo" class="text-center">
+      <!-- <div id="contactform"> -->
+        <!-- <form method="POST" action="http://formspree.io/kfw9257@gmail.com">
           <input name="name" placeholder="Your name" type="text">
           <input name="_replyto" placeholder="Your email" type="email">
           <input type="hidden" name="_subject" value="Website contact" />
           <textarea name="message" placeholder="Your message" rows="12" cols="50"></textarea>
           <button type="submit">Send</button>
-        </form>
-      </div>
+        </form> -->
+        <div class="row text-center">
+          <div class="col-xs-2 col-sm-3 col-md-3 contactLink">
+            <a href="mailto:kfw9257@gmail.com">
+              <img class="rounded" src="images/email.png" alt="Email" title="Email">
+            </a>
+          </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 contactLink">
+            <a href="https://github.com/kfw9257" target="_blank">
+              <img class="rounded" src="images/github2.png" alt="Github Repo" title="Github">
+            </a>
+          </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 contactLink">
+            <a href="http://www.linkedin.com/in/kent-walker-17770210" target="_blank">
+              <img class="rounded" src="images/linkedin3.png" alt="LinkedIn Profile" title="LinkedIn">
+            </a>
+          </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 contactLink">
+            <a href="documents/resume.pdf" target="_blank">
+              <img class="rounded" src="images/resume.png" alt="My Resume" title="Resume">
+            </a>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
     </div>
       <footer class="text-center">
         <div id="footerMenu">
@@ -153,10 +196,10 @@
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
-        <div id="socialLinks">
+        <!-- <div id="socialLinks">
           <a href="https://github.com/kfw9257"><img src="images/github1.png" title="Github Repository" /></a>
           <a href="https://www.linkedin.com/in/kent-walker-17770210"><img src="images/linkedin1.png" title="LinkedIn Profile" /></a>
-        </div>
+        </div> -->
       </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
